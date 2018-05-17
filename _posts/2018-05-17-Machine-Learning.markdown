@@ -1,12 +1,12 @@
 ---
 title: Machine Learning[머신러닝] 개념
-description: 머신러닝이 무었이며, 관련된 용어들을 정리해보았음
+description:
 categories:
  - Machine Learning
 tags: ML
 ---
 
-[![](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/introduction-to-machine-learning_social.png)](https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning)
+![](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/introduction-to-machine-learning_social.png)(https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning)
 
 #### AI(인공지능) ≒  Machine Learning(머신러닝)이라고 생각해도 된다. 
 인공지능의 한 분야로 컴퓨터가 학습하는 알고리즘과 기술이기 때문이며 거기서 더 발전한 것이 Deep Learning(딥러닝) 혹은 DNN(Deep Neural Network)이다.

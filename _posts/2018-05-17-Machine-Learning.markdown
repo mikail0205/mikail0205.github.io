@@ -37,3 +37,7 @@ Supervised learning (지도 학습) : Learning with labeled examples. 학습을 
 알파고도 기존의 바둑 기보를 보고 학습을 하고, 그것을 바탕으로 이세돌 선수가 바둑을 두었을 때 대처를 한 것. 따라서 알파고도 Supervised learning이라고 할 수 있다. 
 
 Unsupervised learning(비지도 학습): Label을 정해주기 어려울 때, data를 보고 스스로 학습한다. 
+
+#### Reference
+main image: https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning
+

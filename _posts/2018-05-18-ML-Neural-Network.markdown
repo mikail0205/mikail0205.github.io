@@ -12,7 +12,6 @@ tags: ML
 따라서 인간의 뇌를 모방해보자 하는 아이디어가 나오게 되었다.
 ![](https://postfiles.pstatic.net/MjAxODA1MTZfMTE0/MDAxNTI2NDY4NDk2NjY2.9NzmYQWo_yCzcQJtyjvOoldXhAtI1evNeN8avHm8NYcg.033XwyvV-8MJgZ5S8kbEGCMxc6mZSiZxDhJY5GQQ34cg.PNG.goddam0205/2018-05-16_%281%29.png?type=w773 "Neural Network")
 인간의 뇌는 전기 신호를 입력받고 Synapses(시냅스)에 의해 다른 신경세포와 연결(input) 한다. 신경전달물질에 의해 신경 세포가 신호 처리(가중치) 되며 결과는 어느 일정 수준 이상이 되면 출력(output)으로 전환한다.
-
 ![](https://postfiles.pstatic.net/MjAxODA1MTZfMiAg/MDAxNTI2NDY4NTUyNjI0.JAcWo6wxaQCGaS79jhLNT9oKeqAIyiyS4x8U4-hTF5kg.gCYDBK_t9G_5Pd8MwzV6P_ln-hb7nxczzxf_w47Z-6cg.PNG.goddam0205/2018-05-16_%282%29.png?type=w773)
 입력 신호 (x1,x2,x3 ...)를 가중치 (weight)와 Bias에 의해 계산하며 activation function에 의해 최종 활성화 여부를 결정(output) 한다
 

@@ -12,7 +12,7 @@ tags: ML
 ![](http://home.agh.edu.pl/~vlsi/AI/intro/neuron.png "Neural Network")
 
 인간의 뇌는 전기 신호를 입력받고 Synapses(시냅스)에 의해 다른 신경세포와 연결(input) 한다. 신경전달물질에 의해 신경 세포가 신호 처리(가중치) 되며 결과는 어느 일정 수준 이상이 되면 출력(output)으로 전환한다.
-![](https://postfiles.pstatic.net/MjAxODA1MTZfMiAg/MDAxNTI2NDY4NTUyNjI0.JAcWo6wxaQCGaS79jhLNT9oKeqAIyiyS4x8U4-hTF5kg.gCYDBK_t9G_5Pd8MwzV6P_ln-hb7nxczzxf_w47Z-6cg.PNG.goddam0205/2018-05-16_%282%29.png?type=w773)
+![](https://qph.ec.quoracdn.net/main-qimg-7d27613d18d38805ced77b68a042d66b.webp)
 
 입력 신호 (x1,x2,x3 ...)를 가중치 (weight)와 Bias에 의해 계산하며 activation function에 의해 최종 활성화 여부를 결정(output) 한다
 
@@ -26,7 +26,7 @@ tags: ML
 > No one on earth had found a viable way to train - Marvin Minsky, 1969
 
 복층 neural network에서는 학습이 불가능한 문제가 발생하게 되는데, (hidden layer를 무슨 수로 학습하는가 ?)
-![](https://postfiles.pstatic.net/MjAxODA1MTZfNSAg/MDAxNTI2NDcwMjM0MjYx.U2H-XXdwDZ4yvlDUVhrPwlMhqDgIEQ1HxyyMEbyRUqog.QQudEG8VeRNboFbFVxzWSe1d16UMtQLZutcgNbtdLK0g.PNG.goddam0205/main-qimg-7532a36a1e14a3f7a135a5f7301a5752.png?type=w773)
+![](https://qph.ec.quoracdn.net/main-qimg-7c35987ad55173b3b76214b9112830ff "Deep Neural Network")
 
 문제가 복잡해줄수록 여러 층으로 뉴런을 구성해야 한다. 다만 이렇게 하면 엄청난 양의 연산을 해야 하는데, 그 당시 컴퓨터로는 절대 불가능했다. 다만 엄청난 계산량은 컴퓨터가 발전하다 보니 덜 신경 써도 되게 되었다. 
 >알파고는 13개의 층으로 수백 ~ 수천만의 연결 고리를 가지고 있다고 한다. 

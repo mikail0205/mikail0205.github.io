@@ -19,7 +19,7 @@ tags: ML
 보통 neural network는 directed graph이다. 정보의 전달이 한 방향으로만 진행되는 것. Undirected edge 혹은 동일한 directed edge가 양뱡향으로 주어지면 정보의 전달이 반복적(recursive)으로 일어나게 되는데 이런 경우를 RNN (Recurrent Neural Network)라고 한다. 
 뇌에서는 각기 다른 뉴런들이 활성화되고, 그 결과를 다음 뉴런에게 전달하고 그 과정을 반복하여 최종 결정을 내리는 뉴런이 activate 되는 방식에 따라서 정보를 처리하게 된다. 다만 단층 Neural Network로는 XOR 문제가 불가능하다.
 
-![](https://postfiles.pstatic.net/MjAxODA1MTZfMjk4/MDAxNTI2NDY5NjI5OTg2.stp2INMBxZkGLaAkQYkp63UPifhlwuBwJeJHA2yir08g.rZ6bqAiZu-x10eU3OzsiK2EPk6a9_GVUm-YAl-GMPtYg.PNG.goddam0205/2018-05-16.png?type=w773)
+![](http://cfile26.uf.tistory.com/image/225F7E4B579D6C68072292)
 
 (Simple) XOR problem : linearly separable ?
 단층 neural network의 선형성 때문에 XOR 문제가 해결이 불가능하다. XOR은 곡속으로만 해결이 가능. 복잡한 문제 해결을 위해 Multilayer(복층) Neural Network가 필요하다. 하지만 엄청난 계산량에 한계를 발견하게 된다. 

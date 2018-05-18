@@ -9,7 +9,7 @@ tags: ML
 ## Artificial Neural Network[인공신경망] 줄여서 Neural Network 
 인간의 신경세포(뉴런)을 모방하여 수학식으로 만든 것이다. 컴퓨터는 숫자 계산과 같은 부분에서는 분명 사람보다 뛰어나지만, 사람은 당연하게(?) 사진을 보고 사물을 구별한다. 하지만 컴퓨터가 하기는 어렵다. 컴퓨터에겐 사진은 단순하게 0과 1로 이루어진 픽셀 데이터에 지나지 않기 때문.
 사실 사람도 자연스럽게 될 뿐 과정은 간단하진 않다. 뇌에는 1천억 개의 뉴런과 100조 개의 연결이 존재한다. 따라서 인간의 뇌를 모방해보자 하는 아이디어가 나오게 되었다.
-![](https://postfiles.pstatic.net/MjAxODA1MTZfMTE0/MDAxNTI2NDY4NDk2NjY2.9NzmYQWo_yCzcQJtyjvOoldXhAtI1evNeN8avHm8NYcg.033XwyvV-8MJgZ5S8kbEGCMxc6mZSiZxDhJY5GQQ34cg.PNG.goddam0205/2018-05-16_%281%29.png?type=w773 "Neural Network")
+![](http://home.agh.edu.pl/~vlsi/AI/intro/neuron.png "Neural Network")
 
 인간의 뇌는 전기 신호를 입력받고 Synapses(시냅스)에 의해 다른 신경세포와 연결(input) 한다. 신경전달물질에 의해 신경 세포가 신호 처리(가중치) 되며 결과는 어느 일정 수준 이상이 되면 출력(output)으로 전환한다.
 ![](https://postfiles.pstatic.net/MjAxODA1MTZfMiAg/MDAxNTI2NDY4NTUyNjI0.JAcWo6wxaQCGaS79jhLNT9oKeqAIyiyS4x8U4-hTF5kg.gCYDBK_t9G_5Pd8MwzV6P_ln-hb7nxczzxf_w47Z-6cg.PNG.goddam0205/2018-05-16_%282%29.png?type=w773)

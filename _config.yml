@@ -71,10 +71,10 @@ plugins:
  - jekyll-feed
 
 # ---------------------------------------------------------------
-# Site Information Settings
+# Site Information Settings 사이트 정보 설정
 # ---------------------------------------------------------------
 
-# Put your favicon.ico into `assets/` directory.
+# Put your favicon.ico into `assets/` directory 왜인지 .ico 확장자 인식 못함.
 favicon: /assets/favicon.jpg
 
 # Set default keywords (Use a comma to separate)

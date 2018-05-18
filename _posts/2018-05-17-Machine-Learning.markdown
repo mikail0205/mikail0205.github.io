@@ -24,8 +24,9 @@ Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Autom
 문제를 해결하기 위한 맞춤 코드(custom code)를 작성하지 않고도 일련의 데이터에 대해 무언가 흥미로운 것을 알려줄 수 있는 일반 알고리즘(Generic algorithms)이 있다는 아이디어.
 
 #### Machine Learning은 근본적으로 두 가지 문제를 해결하기 위한 것이다. 
-Regression(회귀) : 현재의 샘플링 데이터를 바탕으로 미래에 올 데이터를 예측하는 것. 주식 가격 변동을 보고 가격 예측, 시간대별 IT 시스템의 부하 예측
-Classification(분류) : 데이터를 몇 가지 특성을 가진 그룹으로 분류하는 것. 사진을 보고 사물 식별, 사람 얼굴 인식.
+**Regression(회귀)** : 현재의 샘플링 데이터를 바탕으로 미래에 올 데이터를 예측하는 것. 주식 가격 변동을 보고 가격 예측, 시간대별 IT 시스템의 부하 예측
+
+**Classification(분류)** : 데이터를 몇 가지 특성을 가진 그룹으로 분류하는 것. 사진을 보고 사물 식별, 사람 얼굴 인식.
 공부한 시간을 바탕으로 시험 성적을 예측할 때 
 1. 점수(0 ~ 100)으로 하면 : regression
 2. 통과 or not으로 하면 : binary classification
@@ -33,11 +34,11 @@ Classification(분류) : 데이터를 몇 가지 특성을 가진 그룹으로 �
 
 #### 두가지 학습 방법 Supervised / Unsupervised learning
 
-Supervised learning (지도 학습) : Learning with labeled examples. 학습을 위한 데이터(training data)가 존재하고 그 데이터로 학습을 하는 것. 
+**Supervised learning (지도 학습)** : Learning with labeled examples. 학습을 위한 데이터(training data)가 존재하고 그 데이터로 학습을 하는 것. 
 알파고도 기존의 바둑 기보를 보고 학습을 하고, 그것을 바탕으로 이세돌 선수가 바둑을 두었을 때 대처를 한 것. 따라서 알파고도 Supervised learning이라고 할 수 있다. 
 
-Unsupervised learning(비지도 학습): Label을 정해주기 어려울 때, data를 보고 스스로 학습한다. 
+**Unsupervised learning(비지도 학습)** : Label을 정해주기 어려울 때, data를 보고 스스로 학습한다. 
 
 #### Reference
-main image: https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning
+**main image**: https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning
 

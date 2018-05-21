@@ -4,7 +4,7 @@ description: Computer vision에 대한 역사와 개념 설명 cs231n강의 참�
 categories:
  - Computer Vision
  - Machine Learning
-tags: Computer Vision, ML
+tags: ComputerVision, ML
 ---
 ## Computer Vision
 컴퓨터 비전은 visual data[시각 데이터]에 대한 연구이다. Visual data의 양은 계속해서 증가하고 있는데, 2017년에 모든 인터넷의 80%에 해당하는 자료가 비디오가 될 것이다는 CISCO의 연구도 있었다.

@@ -545,10 +545,6 @@ calendar:
   singleEvents: true
   maxResults: 250
 
-timezone: TIMEZONE
-future: true
-encoding: UTF-8
-
 # Algolia Search
 algolia_search:
   enable: false

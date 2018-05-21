@@ -541,12 +541,13 @@ calendar:
   orderBy: startTime
   offsetMax: 24
   offsetMin: 4
-  timeZone: TIMEZONE
   showDeleted: false
   singleEvents: true
   maxResults: 250
-  future: true
-  encoding: UTF-8
+
+timeZone: TIMEZONE
+future: true
+encoding: UTF-8
 
 # Algolia Search
 algolia_search:

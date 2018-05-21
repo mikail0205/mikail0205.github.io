@@ -8,22 +8,22 @@ tags: ML
 
 ![](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/introduction-to-machine-learning_social.png "Machine Learning")
 
-### AI(인공지능) ≒  Machine Learning(머신러닝)이라고 생각해도 된다. 
+## AI(인공지능) ≒  Machine Learning(머신러닝)이라고 생각해도 된다. 
 인공지능의 한 분야로 컴퓨터가 학습하는 알고리즘과 기술이기 때문이며 거기서 더 발전한 것이 Deep Learning(딥러닝) 혹은 DNN(Deep Neural Network)이다.
 Deep Learning의 개념자체는 이미 수십년 전에 있었지만 DL에 대한 이론적인 결과가 전무했다는 점도 있고 그 당시 컴퓨터로는 처리할 엄두조차 낼 수 없었기 때문.
 
-### Artificial intelligence / Machine Learning / Deep Learning
+## Artificial intelligence / Machine Learning / Deep Learning
 1956년 처음으로 A.I(인공지능)이라는 개념이 등장했다. 영화 등에서 보는 사람과 같은 AI는 general AI/strong AI라고 한다. 하지만 현재 기술 수준에서 만들 수 있는 AI는 narrow AI/weak AI(특정한 일을 사람보다 뛰어난 능력으로 수행하는 AI) 의 개념에 포함된다.
 기본적으로 Machine Learning은 알고리즘을 이용해 데이터를 분석하고 분석을 통해 학습하며, 학습한 내용을 기반으로 판단이나 예측을 한다. 대량의 데이터와 알고리즘을 통해 컴퓨터 그 자체를 학습시켜 작업 수행 방법을 익히는 것을 목표로 한다.
 Deep Learning은 Neural Network(인공신경망)에서 발전한 형태의 인공 지능으로, 뇌의 뉴런과 유사한 정보를 입출력 계층을 활용해 데이터를 학습한다. 그리고 hidden layer가 1개 보다 많으면 'deep'하다라고 한다.
 
 > Machine Learning : "Field of study that gives computers the ability to learn without being explicitly programmed" Auther Samuel (1959)
 
-### Why Machine Learning?
+## Why Machine Learning?
 Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Automatic driving 등 너무 많은 규칙을 필요로 한다. 그렇다면 프로그램 자체가 어떤 데이터를 보고 학습하는 능력을 갖추면 어떨까?
 문제를 해결하기 위한 맞춤 코드(custom code)를 작성하지 않고도 일련의 데이터에 대해 무언가 흥미로운 것을 알려줄 수 있는 일반 알고리즘(Generic algorithms)이 있다는 아이디어.
 
-### Machine Learning은 근본적으로 두 가지 문제를 해결하기 위한 것이다. 
+## Machine Learning은 근본적으로 두 가지 문제를 해결하기 위한 것이다. 
 **Regression(회귀)** : 현재의 샘플링 데이터를 바탕으로 미래에 올 데이터를 예측하는 것. 주식 가격 변동을 보고 가격 예측, 시간대별 IT 시스템의 부하 예측 등
 
 **Classification(분류)** : 데이터를 몇 가지 특성을 가진 그룹으로 분류하는 것. 사진을 보고 사물 식별, 사람 얼굴 인식.
@@ -32,7 +32,7 @@ Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Autom
 2. 통과 or not으로 하면 : binary classification
 3. 문자 (A, B, C, D, E and F)로 하면 : multi-label classification이라 한다.
 
-### 세가지 학습 방법 Supervised / Unsupervised / Reinforcement Learning
+## 세가지 학습 방법 Supervised / Unsupervised / Reinforcement Learning
 
 ![](http://solarisailab.com/wp-content/uploads/2017/06/supervsied_unsupervised_reinforcement.jpg)
 
@@ -44,7 +44,7 @@ Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Autom
 **Reinforcement learning (강화 학습)** : 앞선 두 가지 학습과는 다른 종류의 학습 알고리즘이다. 앞선 두 가지 학습은 데이터가 주어진 상태로 시작을 하지만 강화 학습은 데이터를 수집하는 과정까지 포함을 한다.
 주어진 환경에서 행동을 취하고 그로부터 보상을 얻으면서 학습을 진행하게 된다.
 
-### References
+## References
 <https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning>
 
 <http://solarisailab.com/archives/1785>

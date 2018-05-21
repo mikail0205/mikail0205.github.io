@@ -6,7 +6,7 @@
 # Site
 title: HyungIn's World
 subtitle: HyungIn's Study life
-description:
+description: For personal study. Just started to build this git page.
 author: Hyung In Mikail Choi
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
@@ -212,8 +212,8 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+#social: Instagram
+  #LinkLabel: https://www.instagram.com/mikail0205/
 
 
 # Social Links Icons

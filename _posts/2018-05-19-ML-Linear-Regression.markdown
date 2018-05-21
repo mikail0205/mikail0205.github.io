@@ -1,6 +1,6 @@
 ---
 title: Machine Learning[머신러닝] Linear regression(선형 회귀)
-description: 머신러닝에 대한 Linear regression(선형 회귀)에 대한 설명
+description: Linear regression(선형 회귀)에 대한 설명
 categories:
  - Machine Learning
 tags: ML

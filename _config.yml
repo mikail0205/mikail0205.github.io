@@ -4,17 +4,17 @@
 # ---------------------------------------------------------------
 
 # Site
-title: "HyungIn's World"
-subtitle: HyungIn's study life
-description: It's mainly for my personal study and managing things i've done. 
-author: HyungIn Mikail Choi
+title: HyungIn's World
+subtitle: HyungIn's Study life
+description:
+author: Hyung In Mikail Choi
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: https://mikail0205.github.io
+url: mikail0205.github.io
 baseurl:
 permalink: pretty
 
@@ -32,7 +32,7 @@ paginate: 10
   #paginate_path: "/page:num/"
 
 # Handling Reading
-exclude: [".rvmrc", ".rbenv-version", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md"]
 
 # Separator
 #excerpt_separator: <!-- more -->
@@ -71,11 +71,11 @@ plugins:
  - jekyll-feed
 
 # ---------------------------------------------------------------
-# Site Information Settings 사이트 정보 설정
+# Site Information Settings
 # ---------------------------------------------------------------
 
-# Put your favicon.ico into `assets/` directory 왜인지 .ico 확장자 인식 못함.
-favicon: /assets/favicon.jpg
+# Put your favicon.ico into `assets/` directory.
+favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
@@ -86,7 +86,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2018
+since: 2018
 
 # icon between year and author @Footer
 authoricon: heart
@@ -541,6 +541,7 @@ calendar:
   orderBy: startTime
   offsetMax: 24
   offsetMin: 4
+  timeZone:
   showDeleted: false
   singleEvents: true
   maxResults: 250

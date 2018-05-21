@@ -545,6 +545,7 @@ calendar:
   showDeleted: false
   singleEvents: true
   maxResults: 250
+  future: true
 
 # Algolia Search
 algolia_search:

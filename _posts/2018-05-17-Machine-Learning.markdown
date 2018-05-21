@@ -32,12 +32,17 @@ Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Autom
 2. 통과 or not으로 하면 : binary classification
 3. 문자 (A, B, C, D, E and F)로 하면 : multi-label classification이라 한다.
 
-### 두가지 학습 방법 Supervised / Unsupervised learning
+### 세가지 학습 방법 Supervised / Unsupervised / Reinforcement Learning
+
+![](http://solarisailab.com/wp-content/uploads/2017/06/supervsied_unsupervised_reinforcement.jpg)
 
 **Supervised learning (지도 학습)** : Learning with labeled examples. Label이 붙은 학습을 위한 데이터(training data)가 존재하고 그 데이터로 학습을 하는 것이다. 즉 답이 구성된 데이터(문제)로 알고리즘을 훈련시킨다는 것이며 패턴을 찾아내서 새롭운 데이터(문제)의 답을 찾아내는 것.
 알파고도 기존의 바둑 기보를 보고 학습을 하고, 그것을 바탕으로 이세돌 선수가 바둑을 두었을 때 대처를 한 것. 따라서 알파고도 Supervised learning이라고 할 수 있다.
 
-**Unsupervised learning(비지도 학습)** : Label을 정해주기 어려울 때, data를 보고 스스로 학습한다. 특성이 비슷한 데이터를 합쳐서 group으로 분류하는 학습 방법이다. 비지도 학습은 label이 없는 데이터를 사용하며 데이터 안에서 관계를 찾아내는 것을 목적으로 한다. 따라서 사람의 개입이 없어 컴퓨터 스스로 데이터를 훈련하는 것이다. 그래서 비지도라고 한다. 하지만 대부분의 데이터가 label이 없는 형태이기 때문에 앞으로 machine learning이 나아가야 할 방향이라고 한다.
+**Unsupervised learning (비지도 학습)** : Label을 정해주기 어려울 때, data를 보고 스스로 학습한다. 특성이 비슷한 데이터를 합쳐서 group으로 분류하는 학습 방법이다. 비지도 학습은 label이 없는 데이터를 사용하며 데이터 안에서 관계를 찾아내는 것을 목적으로 한다. 따라서 사람의 개입이 없어 컴퓨터 스스로 데이터를 훈련하는 것이다. 그래서 비지도라고 한다. 하지만 대부분의 데이터가 label이 없는 형태이기 때문에 앞으로 machine learning이 나아가야 할 방향이라고 한다.
+
+**Reinforcement learning (강화 학습)** : 앞선 두 가지 학습과는 다른 종류의 학습 알고리즘이다. 앞선 두 가지 학습은 데이터가 주어진 상태로 시작을 하지만 강화 학습은 데이터를 수집하는 과정까지 포함을 한다. 
+주어진 환경에서 행동을 취하고 그로부터 보상을 얻으면서 학습을 진행하게 된다. 
 
 ### Reference
 **main image**: https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning

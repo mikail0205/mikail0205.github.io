@@ -545,7 +545,7 @@ calendar:
   singleEvents: true
   maxResults: 250
 
-timeZone: TIMEZONE
+timezone: TIMEZONE
 future: true
 encoding: UTF-8
 

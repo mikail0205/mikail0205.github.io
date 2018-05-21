@@ -45,7 +45,7 @@ Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Autom
 주어진 환경에서 행동을 취하고 그로부터 보상을 얻으면서 학습을 진행하게 된다.
 
 ### References
-https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning
+<https://www.digitalocean.com/community/tutorials/an-introduction-to-machine-learning>
 
-http://solarisailab.com/archives/1785
+<http://solarisailab.com/archives/1785>
 

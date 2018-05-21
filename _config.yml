@@ -541,7 +541,7 @@ calendar:
   orderBy: startTime
   offsetMax: 24
   offsetMin: 4
-  timeZone:
+  timeZone: TIMEZONE
   showDeleted: false
   singleEvents: true
   maxResults: 250

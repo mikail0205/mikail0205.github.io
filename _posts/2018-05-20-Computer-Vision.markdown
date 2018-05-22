@@ -44,8 +44,19 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 ![](http://www.packet.cc/images/mach-per-fig2.jpg "Block world")
 1966 년에 "Summer Vision Project"라는 유명한 MIT 여름 프로젝트가 있었는데. 이 프로젝트의 목표는 visual system의 중요한 부분을 구성하는 데 여름 노동자들을 효과적으로 사용하려는 시도였다. 50여 년이 지난 지금도 컴퓨터 비전 분야는 한 여름 프로젝트에서 전 세계 수 천명의 연구자들로 피어나고 있으며, 여전히 vision의 가장 근본적인 문제 중 일부를 다루고 있다. 우리는 아직 vision을 해결하지 못했지만 인공 지능 분야에서 가장 중요하고 빠르게 성장하는 분야 중 하나로 성장했다.
 
+또 한 명의 경의를 표해야 할 사람은 'David Marr'이다. MIT 과학자로 1970년대 후반에 그의 vision에 대한 생각과 우리가 computer vision에 대해 어떻게 접근해야 하는지 그리고 컴퓨터로 시각적 세계(visual world)를 인식할 수 있게 하는 알고리즘을 개발하는 데에 대한 영향력 있는 책을 저술했다.
+
+그 책에서는 이미지를 취하고 시각적 세계의 마지막인 3차원 표현에 도달하기 위해 여러 과정을 거쳐야 한다는 것이다.
+
+![](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/GOMES1/img1.gif)
+첫 번째 과정은 '원시 스케치 (primal sketch)'라고 부른다. 대부분 가장자리, 바, 끝, 가상 선, 커브, 경계가 표현되는 곳이며 신경과학자(neuroscientist)들이 보았던 것에서 영감을 받았다. Hubel과 Wiesel은 시각적 처리의 초기 단계가 모서리(edge)와 같은 간단한 구조와 관련이 있다고 말했다.
+다음 단계는 "2-and-half-D sketch"라고 부른다. visual scene의 surfaces, depth information, layers 또는 시각 화면의 불연속 부분을 함께 조각하기 시작한 다음 결국 모든 것을 모아서 surface 및 volumetric primitives 등을 통해 계층적으로(hierarchically organized) 구성된 3차원 모델을 갖게 된다. 따라서 이것은 vision이 무엇인지와 그러한 사고방식에 대한 매우 이상적인 사고 과정이었다.
+실제로 수십 년 동안 computer vision을 지배해 왔으며 학생들이 시각 영역(field of visual)에 들어가서 시각적 정보를 분석하는 방법을 생각하는 데 매우 직관적인 방법이기도 하다.
+
+
 ## Release note
-2018-05-20 : first upload
+2018-05-20 : First upload
+2018-05-22 : Add
 
 
 ## References

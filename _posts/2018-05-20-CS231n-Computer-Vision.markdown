@@ -1,6 +1,7 @@
 ---
-title: [CS231n] Lec01 Computer vision[컴퓨터 비전]
+title: [CS231n] Lec01 Computer vision(컴퓨터 비전)
 description: Computer vision에 대한 역사와 개념 설명 cs231n강의 참고
+date: 2018-05-20
 categories:
  - Computer Vision
  - Machine Learning

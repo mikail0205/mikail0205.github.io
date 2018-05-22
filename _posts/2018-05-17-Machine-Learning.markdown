@@ -54,6 +54,8 @@ label이 일부만 있는 데이터를 학습하는 것을 Semisupervised learni
 **Reinforcement learning (강화 학습)** : 앞선 두 가지 학습과는 매우 다른 종류의 학습 알고리즘이다. 앞선 두 가지 학습은 데이터가 주어진 상태로 시작을 하지만 강화 학습은 데이터를 수집하는 과정까지 포함을 한다. 여기서는 학습하는 시스템을 에이전트(agent)라고 부르며 환경(environment)을 관찰해서 행동(action)을 실행하고 그 결과로 보상(reward) 또는 벌점(penalty)를 받는다. 시간이 지나면서 가장 큰 보상을 얻기 위해 정책(policy)라고 부르는 최상의 전략을 스스로 학습 하는 것.
 ![](https://1.bp.blogspot.com/-TYr5fovwVp4/VvY7iT_JJ5I/AAAAAAAAxQg/xayzv5nND2sCh16MINdYjNJDY8qldZdGA/s400/aaa.png "Reinforcement learning")
 
+위 3가지 학습법 외에도 다양한 학습방법이 있다.
+
 ## Release note
 2018-05-17: First upload
 2018-05-22: Update

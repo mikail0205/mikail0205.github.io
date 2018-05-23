@@ -78,8 +78,8 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 
 
 ## Release note
-2018-05-20 : First upload
-2018-05-22 : Add
+2018-05-20 : First upload  
+2018-05-22 : Update
 
 
 ## References

@@ -6,7 +6,7 @@ categories:
 tags: ML
 ---
 
-## Artificial Neural Network[인공신경망] 줄여서 Neural Network 
+## Artificial Neural Network[인공신경망] 줄여서 Neural Network
 인간의 신경세포(뉴런)을 모방하여 수학식으로 만든 것이다. 컴퓨터는 숫자 계산과 같은 부분에서는 분명 사람보다 뛰어나지만, 사람은 당연하게(?) 사진을 보고 사물을 구별한다. 하지만 컴퓨터가 하기는 어렵다. 컴퓨터에겐 사진은 단순하게 0과 1로 이루어진 픽셀 데이터에 지나지 않기 때문.
 사실 사람도 자연스럽게 될 뿐 과정은 간단하진 않다. 뇌에는 1천억 개의 뉴런과 100조 개의 연결이 존재한다. 따라서 인간의 뇌를 모방해보자 하는 아이디어가 나오게 되었다.
 ![](http://home.agh.edu.pl/~vlsi/AI/intro/neuron.png "Neural Network")
@@ -31,4 +31,9 @@ tags: ML
 문제가 복잡해줄수록 여러 층으로 뉴런을 구성해야 한다. 다만 이렇게 하면 엄청난 양의 연산을 해야 하는데, 그 당시 컴퓨터로는 절대 불가능했다. 다만 엄청난 계산량은 컴퓨터가 발전하다 보니 덜 신경 써도 되게 되었다. 
 >알파고는 13개의 층으로 수백 ~ 수천만의 연결 고리를 가지고 있다고 한다. 
 
-그리고 재 조명 받은 것이 Deep Learning 혹은 Deep Neural Network이다. 개념 자체는 수십 년도 전에 있었지만... 그리고 정보의 진행이 앞으로만 일어나는 네트워크를 'feed-forward network'라고 하는데, 그 가운데 위의 이미지처럼 hidden layer가 하나보다 많으면 'deep'하다고 한다. 요즘은 layer를 대부분 하나보다는 많이 쌓기 때문에 요즘 나오는 neural network 연구들은 다 deep learning이라고 생각해도 된다. 
+그리고 재 조명 받은 것이 Deep Learning 혹은 Deep Neural Network이다. 개념 자체는 수십 년도 전에 있었지만... 그리고 정보의 진행이 앞으로만 일어나는 네트워크를 'feed-forward network'라고 하는데, 그 가운데 위의 이미지처럼 hidden layer가 하나보다 많으면 'deep'하다고 한다. 요즘은 layer를 대부분 하나보다는 많이 쌓기 때문에 요즘 나오는 neural network 연구들은 다 deep learning이라고 생각해도 된다.
+
+## Release Note
+2018-05-18: Upload
+
+## Reference

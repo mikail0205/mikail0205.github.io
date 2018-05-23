@@ -57,7 +57,7 @@ label이 일부만 있는 데이터를 학습하는 것을 Semisupervised learni
 위 3가지 학습법 외에도 다양한 학습방법이 있다.
 
 ## Release note
-2018-05-17: First upload
+2018-05-17: First upload  
 2018-05-22: Update
 
 ## References

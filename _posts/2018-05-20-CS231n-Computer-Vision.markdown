@@ -70,14 +70,17 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 영상분할 문제에 대한 그래픽 이론 알고리즘을 사용한 아주 초기의 작품이 있는데. Computer vision의 얼굴 인식에 대한 문제이다. 1999년에서 2000년 사이에 machine learning이 추진력을 얻기 시작하는데. 이는 verctor machine, boosting과 neural network(신경망)의 첫 번째 물결을 포함한 그래픽 모델이다. 많은 기여를 한 작업은 AdaBoost 알고리즘을 사용한 Paul Viola와 Micheal Jones의 실시간으로 얼굴을 탐지하는 작업이었다. 2001년에는 컴퓨터 칩이 느렸지만 거의 실시간으로 이미지에서 얼굴을 감지 할 수 있었고 2006년 5월 신문에 발표한 후 Fujifilm은 실시간 얼굴 탐지가 가능한 최초의 디지털 카메라를 출시하게된다.
 기초 과학 연구에서 실제 세상에 응용까지 매우 빠른 인계였으며 어떻게 하면 물체를 더 잘 인식할 수 있을지 지속적으로 연구하고 있다. 1990년대 후반부터 2000년대 초반까지 가장 영향력 있었던 사고방식 중 하나는 feature 기반의 물체 인식이었다. SIFT feature라고 불리는 David Lowe의 작업이 있는데.
 ![](https://user-images.githubusercontent.com/32008883/30752062-1eba20aa-9ff6-11e7-92d5-38e5bb037353.JPG)
-아이디어는 전체 객체(object)를 일치시키는 것이다. 예를 들자면 정지신호가 있는데 문제는 이 정지신호를 다른 정지신호와 일치시키는 일은 매우 어려운데 바로 카메라의 각도, 시점, 조명 및 객체 자체의 고유한 변형으로 인해 매우 어렵다. 하지만 관찰하던 중 객체에는 변화에 영향을 받지 않는 어떠한 특징이 있다는 사실에 영감을 얻게된다. 그래서 객체 인식은 중요한 feature를 식별하고 유사 객체와 feature를 일치시키는 것으로 시작이 된다. 이는 전체 객체를 일치시키는 것보다 쉬운 작업이기 때문이다. 따라서 위 그림은 하나의 정지 표시로 부터 SIFT 특징들이 식별되며 다른 정지 표지의 SIFT 특징들과 일치한다는 것을 보여주는 그림이다.
+아이디어는 전체 객체(object)를 일치시키는 것이다. 예를 들자면 정지신호가 있는데 문제는 이 정지신호를 다른 정지신호와 일치시키는 일은 매우 어려운데 바로 카메라의 각도, 시점, 조명 및 객체 자체의 고유한 변형으로 인해 매우 어렵다. 하지만 관찰하던 중 객체에는 변화에 영향을 받지 않는 어떠한 특징이 있다는 사실에 영감을 얻게 된다. 그래서 객체 인식은 중요한 feature를 식별하고 유사 객체와 feature를 일치시키는 것으로 시작이 된다. 이는 전체 객체를 일치시키는 것보다 쉬운 작업이기 때문이다. 따라서 위 그림은 하나의 정지 표시로부터 SIFT 특징들이 식별되며 다른 정지 표지의 SIFT 특징들과 일치한다는 것을 보여주는 그림이다.
 
 Using the same building block which is feature, diagnostic features in images. 한 걸음 더 나아가 전체론적(holistic) 장면을 인식하기 시작했다. 여기 한 예로 'Spatial Pyramid Matching'이라 불리는 알고리즘이 있는데.
 ![](https://www.researchgate.net/profile/Michael_Mayo4/publication/254051049/figure/fig1/AS:298045649506304@1448071028274/Spatial-pyramid-matching.png)
-이 아이디어는 풍경이나, 부엌, 고속도로 등 어떤 장면 유형이든 상관없이 feature가 있고 그 장면이 무엇인지에 대한 단서를 제공한다는 것이다. 이 작업은 이미지의 다른 부분과 다른 해상도에서 feature를 가져와 feature discriptor에 넣고 그 위에 vector machine 알고리즘을 사용하는 것이다. 매우 유사한 연구가 인간 인지(human recognition)에 힘을 얻고 있다. 이러한 feature를 잘 정리하면 보다 현실적인 이미지로 인체를 구성하고 인식할 수 있는 방법을 모색하는 많은 작업을 수행할 수 있다.
+이 아이디어는 풍경이나, 부엌, 고속도로 등 어떤 장면 유형이든 상관없이 feature가 있고 그 장면이 무엇인지에 대한 단서를 제공한다는 것이다. 이 작업은 이미지의 다른 부분과 다른 해상도에서 feature를 가져와 feature discriptor에 넣고 그 위에 vector machine 알고리즘을 사용하는 것이다. 매우 유사한 연구가 인간 인지(human recognition)에 힘을 얻고 있다. 이러한 feature를 잘 정리하면 보다 현실적인 이미지로 인체를 구성하고 인식할 수 있는 방법을 모색하는 많은 작업을 수행할 수 있다. ("Histogram of gradients", "deformable part models"와 같은 영상 feature 방법이 있다.)
 > feature descriptor : 유용한 정보를 추출하고 불필요한 정보를 버림으로써 이미지를 단순화하는 이미지 또는 이미지 패치 표현.
 
-"Histogram of gradients"와 "deformable part models"라 불리는 작업들이 있는데. 한가지 변화는 사진의 품질이다. 인터넷의 성장과 함께 디지털 카메라는 computer vision을 연구하기 위해 더 좋은 데이터를 가지게 되었고 2000년대 초의 결과 중 하나는 computer vision분야가 해결해야 할 중요한 building block 문제를 정의했다는 것이다. 
+1960년대를 지나 21세기 초까지, 한가지 변화는 사진의 품질이다. 인터넷의 성장과 함께 디지털카메라는 computer vision을 연구하기 위해 더 좋은 데이터를 가지게 되었고 2000년대 초의 결과 중 하나는 computer vision 분야가 해결해야 할 중요한 building block 문제를 정의했다는 것이다. 물론 이것은 해결해야 할 유일한 문제가 아니다. 다만 인식의 측면에서, 객체 인식(object recognition)을 해결하는 매우 중요한 문제이다. 지금까지 객체 인식에 대해서 계속 이야기하고 있는데. 스탠퍼드에서 2000년대 초반에 객체 인식의 진행 상황을 측정할 수 있는 벤치마크 데이터셋을 만들기 시작한다. 바로 가장 영향력 있는 벤치마크 데이트셋 중 하나인 **"PASCAL Visual Object Challenge"**이다. 20개의 객체 클레스들로 구성된 데이터셋이며 기차, 비행기, 사람, 고양이, 소 등이 있다. 데이터셋의 범주당 수천에서 수만 가지의 이미지로 구성되며 field마다 testing set에 대해 테스트를 하고 진행 상황을 확인하는 알고리즘을 개발하게 된다.
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/pvoc2012.png?raw=true)
+여기 2007 ~ 2012년까지 보여주는 차트가 있다. 벤치마크 데이터셋에서 이미지의 object 감지 성능이 꾸준히 증가하는 걸 볼 수 있듯. 많은 진전이 있었지만 그 즘에 Princeton에서 Stanford에 이르기까지 스스로에게 더 어려운 질문을 하기 시작한다. 즉 "과연 우리가 세상의 모든 것을 인식할 준비가 되어있는가?"이다. Machine learning 알고리즘의 대부분은 그래픽 모델, support vector machine 또는 AdaBoost인지 여부는 중요하지 않다. 교육 과정에서 지나치게 적합(overfit) 할 가능성이 높으며 일부 문제는 시작적인 데이터가 매우 복잡하다는 것이다. 복잡하게 되면 모델은 높은 차원의 입력을 가지는 경향이 있고, 많은 매개 변수를 필요로 한다. 충분한 교육 데이터(training data)가 없을 때. 과적합(overfiting)은 매우 빠르게 일어나며 일반화(generalize) 하기가 어렵다. 두 가지 이유에 의해 동기부여가 되는데 하나는 세계의 모든 객체 인식하고 싶다는 것이고 다른 하나는 [machine learning으로 돌아와서] 과적합의 병목 현상을 극복하는 것이다. 그렇게 ImageNet이라는 프로젝트를 시작하게 된다.
+
 
 
 ## Release note

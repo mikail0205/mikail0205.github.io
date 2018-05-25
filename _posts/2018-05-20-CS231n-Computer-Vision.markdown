@@ -72,8 +72,12 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 ![](https://user-images.githubusercontent.com/32008883/30752062-1eba20aa-9ff6-11e7-92d5-38e5bb037353.JPG)
 아이디어는 전체 객체(object)를 일치시키는 것이다. 예를 들자면 정지신호가 있는데 문제는 이 정지신호를 다른 정지신호와 일치시키는 일은 매우 어려운데 바로 카메라의 각도, 시점, 조명 및 객체 자체의 고유한 변형으로 인해 매우 어렵다. 하지만 관찰하던 중 객체에는 변화에 영향을 받지 않는 어떠한 특징이 있다는 사실에 영감을 얻게된다. 그래서 객체 인식은 중요한 feature를 식별하고 유사 객체와 feature를 일치시키는 것으로 시작이 된다. 이는 전체 객체를 일치시키는 것보다 쉬운 작업이기 때문이다. 따라서 위 그림은 하나의 정지 표시로 부터 SIFT 특징들이 식별되며 다른 정지 표지의 SIFT 특징들과 일치한다는 것을 보여주는 그림이다.
 
+Using the same building block which is feature, diagnostic features in images. 한 걸음 더 나아가 전체론적(holistic) 장면을 인식하기 시작했다. 여기 한 예로 'Spatial Pyramid Matching'이라 불리는 알고리즘이 있는데.
+![](https://www.researchgate.net/profile/Michael_Mayo4/publication/254051049/figure/fig1/AS:298045649506304@1448071028274/Spatial-pyramid-matching.png)
+이 아이디어는 풍경이나, 부엌, 고속도로 등 어떤 장면 유형이든 상관없이 feature가 있고 그 장면이 무엇인지에 대한 단서를 제공한다는 것이다. 이 작업은 이미지의 다른 부분과 다른 해상도에서 feature를 가져와 feature discriptor에 넣고 그 위에 vector machine 알고리즘을 사용하는 것이다. 매우 유사한 연구가 인간 인지(human recognition)에 힘을 얻고 있다. 이러한 feature를 잘 정리하면 보다 현실적인 이미지로 인체를 구성하고 인식할 수 있는 방법을 모색하는 많은 작업을 수행할 수 있다.
+> feature descriptor : 유용한 정보를 추출하고 불필요한 정보를 버림으로써 이미지를 단순화하는 이미지 또는 이미지 패치 표현.
 
-
+"Histogram of gradients"와 "deformable part models"라 불리는 작업들이 있는데. 한가지 변화는 사진의 품질이다. 인터넷의 성장과 함께 디지털 카메라는 computer vision을 연구하기 위해 더 좋은 데이터를 가지게 되었고 2000년대 초의 결과 중 하나는 computer vision분야가 해결해야 할 중요한 building block 문제를 정의했다는 것이다. 
 
 
 ## Release note

@@ -97,10 +97,10 @@ Machine learning 알고리즘의 대부분은 graphic model, support vector mach
 특히나 중요한 것은 "어떻게 과정을 벤치마크 할 것인가"인데. 2009년을 시작으로 ImageNet 팀은 국제적인 대회를 열었고 (ImageNet Large-Scale Visual Recognition Challenge)이 대회를 위해서 더욱 강화된 test set(140만 개의 객체와 1,000개의 object classes로 구성된)을 준비했다. 그리고 이것은 computer vision 알고리즘의 결과를 위해 이미지 분류 인식을 테스트 하기 위함이다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/LSVRC.png?raw=true)
 
-그리고 예제 사진에서 처럼 만약 알고리즘의 결과가 5개의 label을 출력할 수 있고 상위 다섯 개의 label이 올바른 객체를 포함하고 있다면 '성공'이라 부른다.
+그리고 예제 사진처럼 만약 알고리즘의 결과가 5개의 label을 출력할 수 있고 상위 다섯 개의 label이 올바른 객체를 포함하고 있다면 '성공'이라 부른다.
 ![](https://www.researchgate.net/profile/Gustav_Von_Zitzewitz/publication/324476862/figure/fig7/AS:614545865310213@1523530560584/Winner-results-of-the-ImageNet-large-scale-visual-recognition-challenge-LSVRC-of-the.png)
 
-ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 에러율이 지속적으로 줄어들고 2012년에 큰 폭으로 줄어드는데 이는 에러율이 사람과 비슷한 수준에 이를 정도다. (여기서 사람이란 한 명의 스탠포드 대학 박사학위 학생으로 마치 대회에 참여하는 컴퓨터인 것처럼 몇 주간 일을 했다.) 비록 우리가 이미지 인식에(이번 강의에서 배우게 될) 대한 모든 문제를 풀지는 못 했지만 엄청난 진전을 이루었다. 하지만 실세계 응용 프로그램이 ImageNet 도전과제에서 인간과 동등한 수준으로 오류 범위를 좁히는 데는 몇 년 밖에 걸리지 않았다. 그리고 주목해야 할 특별한 순간은 2012년인데. 처음 2년 동안은 error rate가 25%에 머물렀지만 2012년에는 10%나 떨어져 16%가 되었다. 물론 지금은 더 좋지만 그만한 감소율은 significant하고 그 해 우승을 차지한 알고리즘은 CNN 모델인데 다른 알고리즘을 다 물리치고 ImageNet Challenge의 우승을 차지했다. 이 강의는 CNN모델에 (다른 이름으로는 deep learning이라 불린다) 대해 심층적으로 다루며 이 모델들이 무엇인지, 무엇이 좋은지, 그리고 이 모델의 최근 진행 상황은 무엇인지를 공부할 것이다. 역사가 만들어진 곳은 2012년 CNN 모델인데. 자연어 처리 및 음성 인식과 같은 다른 여러 자매 분야와 함께 computer vision 분야에서 좋은 발전을 이루는데 막대한 역량과 능력을 보여주었기 때문이다.
+ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 에러율이 지속적으로 줄어들고 2012년에 큰 폭으로 줄어드는데 비록 이미지 인식에(이번 강의에서 배우게 될) 대한 모든 문제를 풀지는 못 했지만 엄청난 진전을 이루었으며 실세계 응용 프로그램이 ImageNet 도전과제에서 사람과 **(여기서 사람이란 한 명의 스탠포드 대학 박사학위 학생인데 마치 대회에 참여하는 컴퓨터인 것처럼 몇 주간 일을 했다.)** 동등한 수준으로 오류율을 좁히는 데는 몇 년 밖에 걸리지 않았다. 그리고 특별히 주목해야 할 순간은 2012년인데. 처음 2년 동안은 오류율가 25%에 머물렀던 것이 2012년에는 10%나 떨어져 16%가 되었다. 물론 지금은 더 좋지만 그만한 감소율은 significant하고 그 해 우승을 차지한 알고리즘은 CNN( convolutional neural network) 모델인데 다른 알고리즘을 다 물리치고 ImageNet Challenge의 우승을 차지했다. 이 강의는 deep learning 이라고도 불리는 CNN모델에 대해 심층적으로 다루며 이 모델들이 무엇인지, 무엇이 좋은지, 그리고 이 모델의 최근 진행 상황은 무엇인지를 공부할 것이다. 역사가 만들어진 곳은 2012년 CNN 모델인데. 자연어 처리 및 음성 인식과 같은 다른 여러 자매 분야와 함께 computer vision에서 좋은 발전을 이루는데 막대한 역량과 능력을 보여주었기 때문이다.
 
 
 

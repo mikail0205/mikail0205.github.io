@@ -1,6 +1,6 @@
 ---
 title: Machine Learning[머신러닝] Neural Network
-description: Neural Network(인공신경망)에 대한 간략한 정리
+description: Neural Network(인공신경망)에 대한 정리
 categories:
  - Machine Learning
 tags: ML

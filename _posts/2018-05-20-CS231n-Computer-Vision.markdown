@@ -79,7 +79,23 @@ Using the same building block which is feature, diagnostic features in images. �
 
 1960년대를 지나 21세기 초까지, 한가지 변화는 사진의 품질이다. 인터넷의 성장과 함께 디지털카메라는 computer vision을 연구하기 위해 더 좋은 데이터를 가지게 되었고 2000년대 초의 결과 중 하나는 computer vision 분야가 해결해야 할 중요한 building block 문제를 정의했다는 것이다. 물론 이것은 해결해야 할 유일한 문제가 아니다. 다만 인식의 측면에서, 객체 인식(object recognition)을 해결하는 매우 중요한 문제이다. 지금까지 객체 인식에 대해서 계속 이야기하고 있는데. 스탠퍼드에서 2000년대 초반에 객체 인식의 진행 상황을 측정할 수 있는 벤치마크 데이터셋을 만들기 시작한다. 바로 가장 영향력 있는 벤치마크 데이트셋 중 하나인 **"PASCAL Visual Object Challenge"**이다. 20개의 객체 클레스들로 구성된 데이터셋이며 기차, 비행기, 사람, 고양이, 소 등이 있다. 데이터셋의 범주당 수천에서 수만 가지의 이미지로 구성되며 field마다 testing set에 대해 테스트를 하고 진행 상황을 확인하는 알고리즘을 개발하게 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/pvoc2012.png?raw=true)
-여기 2007 ~ 2012년까지 보여주는 차트가 있다. 벤치마크 데이터셋에서 이미지의 object 감지 성능이 꾸준히 증가하는 걸 볼 수 있듯. 많은 진전이 있었지만 그 즘에 Princeton에서 Stanford에 이르기까지 스스로에게 더 어려운 질문을 하기 시작한다. 즉 "과연 우리가 세상의 모든 것을 인식할 준비가 되어있는가?"이다. Machine learning 알고리즘의 대부분은 그래픽 모델, support vector machine 또는 AdaBoost인지 여부는 중요하지 않다. 교육 과정에서 지나치게 적합(overfit) 할 가능성이 높으며 일부 문제는 시작적인 데이터가 매우 복잡하다는 것이다. 복잡하게 되면 모델은 높은 차원의 입력을 가지는 경향이 있고, 많은 매개 변수를 필요로 한다. 충분한 교육 데이터(training data)가 없을 때. 과적합(overfiting)은 매우 빠르게 일어나며 일반화(generalize) 하기가 어렵다. 두 가지 이유에 의해 동기부여가 되는데 하나는 세계의 모든 객체 인식하고 싶다는 것이고 다른 하나는 [machine learning으로 돌아와서] 과적합의 병목 현상을 극복하는 것이다. 그렇게 ImageNet이라는 프로젝트를 시작하게 된다.
+여기 2007 ~ 2012년까지 보여주는 차트가 있다. 벤치마크 데이터셋에서 이미지의 object 감지 성능이 꾸준히 증가하는 걸 볼 수 있듯. 많은 진전이 있을 즘 Princeton에서 Stanford에 이르기까지 스스로에게 더 어려운 질문을 하기 시작한다.
+> 즉 "과연 우리가 세상의 모든 것을 인식할 준비가 되어있는가?"이다.
+
+Machine learning 알고리즘의 대부분은 graphic model, support vector machine 또는 AdaBoost인지 여부는 중요하지 않다. 교육 과정에서 지나치게 적합(overfit) 할 가능성이 높으며 일부 문제는 시작적인 데이터가 매우 복잡하다는 것이다. 복잡하게 되면 모델은 높은 차원의 입력을 가지는 경향이 있고, 많은 매개 변수를 필요로 한다. 충분한 교육 데이터(training data)가 없을 때. 과적합(overfiting)은 매우 빠르게 일어나며 일반화(generalize) 하기가 어렵다. 두 가지 이유에 의해 동기부여가 되는데 하나는 세계의 모든 객체 인식하고 싶다는 것이고 다른 하나는 [machine learning으로 돌아와서] 과적합의 병목 현상을 극복하는 것이다. 그렇게 ImageNet이라는 프로젝트를 시작하게 된다.
+
+![](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
+
+> The ImageNet project is a large visual database designed for use in visual object recognition software research. Over 14 million URLs of images have been hand-annotated by ImageNet to indicate what objects are pictured; in at least one million of the images, bounding boxes are also provided. ImageNet contains over 20 thousand ambiguous categories.
+
+우리는 세상에 존재하는 객체에 대해 찾을 수 있는 가능한 가장 큰 데이터셋을 만들고자 했으며 데이터셋을 사용하여 훈련하고 벤치마킹을 했다. 따라서 약 3년의 기간 동안 진행된 정말 어려운 프로젝트였다. 기본적으로 'WordNet'이라 부르는 수만 개의 object classes로 구성된 사전을 사용해서 정리된 수십억 개의 이미지를 인터넷에서 다운로드하는 걸 시작으로 한다.
+> 워드넷(WordNet): 영어의 의미 어휘목록이다. 영어 단어를 'synset'이라는 유의어 집단으로 분류하여 간략하고 일반적인 정의를 제공하고, 이러한 어휘목록 사이의 다양한 의미 관계를 기록한다. 워드넷은 심리학 교수인 조지 A. 밀러가 지도하는 프린스턴 대학의 인지 과학 연구소에 의해 만들어졌고 유지되고 있다. 개발은 1985년에 시작되었다.
+
+그런 다음 clever crowd engineering trick을 사용해야 했는데. Amazon Mechnical Turk platform을 사용해서 각각의 이미지를 sort, clean, label 했다. 최종 결과는 22,000개의 카테고리로 정리된 150만에서 400만 이상에 해당하는 물체와 장면에 대한 ImageNet으로 이것은 매우 거대하며(gigantic), 아마 그 당시에 인공지능 분야에서 만들어진 가장 큰 데이터셋일 것이다. 그리고 객체 인식에 대한 알고리즘을 다른 단계(phase)로 나아가도록 했다.
+
+특히나 중요한 것은 어떻게 과정을 벤치마크 할 것인가 이다. 2009년을 시작으로 ImageNet 팀은 국제적인 대회를 열었는데 (ImageNet Large-Scale Visual Recognition Challenge)이 대회를 위해서 더욱 강화된 test set(140만 개의 객체와 1,000개의 object classes로 구성된)을 준비했다. 그리고 이것은 computer vision 알고리즘의 결과를 위해 이미지 분류 인식을 테스트 하기 위함이다.
+
+그리고 여기 예제 사진이 있는데 만약 알고리즘의 결과가 5개의 label을 출력할 수 있고 상위 다섯 개의 label이 올바른 객체를 포함하고 있다면 성공했다고 부른다.
 
 
 

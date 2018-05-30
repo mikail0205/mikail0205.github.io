@@ -104,9 +104,15 @@ Machine learning 알고리즘의 대부분은 graphic model, support vector mach
 ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 에러율이 지속적으로 줄어들고 2012년에 큰 폭으로 줄어드는데 비록 이미지 인식에(이번 강의에서 배우게 될) 대한 모든 문제를 풀지는 못 했지만 엄청난 진전을 이루었으며 실세계 응용 프로그램이 ImageNet 도전과제에서 사람과 **(여기서 사람이란 한 명의 스탠포드 대학 박사학위 학생인데 마치 대회에 참여하는 컴퓨터인 것처럼 몇 주간 일을 했다.)** 동등한 수준으로 오류율을 좁히는 데는 몇 년 밖에 걸리지 않았다. 그리고 특별히 주목해야 할 순간은 2012년인데. 처음 2년 동안은 오류율가 25%에 머물렀던 것이 2012년에는 10%나 떨어져 16%가 되었다. 물론 지금은 더 좋지만 그만한 감소율은 significant하고 그 해 우승을 차지한 알고리즘은 CNN( convolutional neural network) 모델인데 다른 알고리즘을 다 물리치고 ImageNet Challenge의 우승을 차지했다. 이 강의는 deep learning 이라고도 불리는 CNN모델에 대해 심층적으로 다루며 이 모델들이 무엇인지, 무엇이 좋은지, 그리고 이 모델의 최근 진행 상황은 무엇인지를 공부할 것이다. 역사가 만들어진 곳은 2012년 CNN 모델인데. 자연어 처리 및 음성 인식과 같은 다른 여러 자매 분야와 함께 computer vision에서 좋은 발전을 이루는데 막대한 역량과 능력을 보여주었기 때문이다.
 
 ## Justin's talk
-CS213n 강의에 대해서 조금 더 말하자면, 이 강의는 visual recognition에서 가장 중요한 문제 중 하나인 image classification에 대해 다룰 것이다. Image classification의 구조는 알고리즘이 이미지를 보고 고정 집합의 범주에서 선택하여 해당 이미지를 분류하는 것이다. 이것은 제한적이거나 인위적인 설정으로 보일 수도 있지만, 실제로는 꽤 일반적이다. 그리고 이 문제는 산업계와 학계 그리고 많은 다양한 분야에서 적용 될 수 있다. 예를 들어, 음식을 인식하거나, 음식의 칼로리를 인식하거나 세상의 예술품, 제품들을 인식하는데 적용할 수 있다. 따라서 이 상대적으로 기본적인 영상 분류 도구는 그 자체적으로 매우 유용하며 여러가지 용도로 전 세계에 적용할 수 있다.
+CS213n 강의에 대해서 조금 더 말하자면, 이 강의는 visual recognition에서 가장 중요한 문제 중 하나인 image classification에 대해 다룰 것이다. Image classification의 구조는 알고리즘이 이미지를 보고 고정 집합의 범주에서 선택하여 해당 이미지를 분류하는 것이다. 이것은 제한적이거나 인위적인 설정으로 보일 수도 있지만, 실제로는 꽤 일반적이다. 그리고 이 문제는 산업계와 학계 그리고 많은 다양한 분야에서 적용될 수 있다. 예를 들어, 음식을 인식하거나, 음식의 칼로리를 인식하거나 세상의 예술품, 제품들을 인식하는데 적용할 수 있다. 따라서 이 상대적으로 기본적인 영상 분류 도구는 그 자체적으로 매우 유용하며 여러 가지 용도로 전 세계에 적용할 수 있다.
 
-하지만 이 과정에서는 image classification을 위해 개발한 많은 도구를 기반으로 하는 몇가지 visual recognition문제에 대해서도 설명할 것이다. object detection, image captioning과 같이 image classification과 관련된 여러가지 visual recognition문제가 있다. Object detection 구조는 고양이, 개, 말 그외 비슷한 것들처럼 전체 이미지를 분류하는 것과는 조금 다른데. 대신 bounding box를 그리고 여기 고양이가 있고 여기 개가 있고 저기 배경에 자동차가 있다며 이미지 안에있는 객체에다가 박스를 그려서 설명하는 것이다.
+하지만 이 과정에서는 image classification을 위해 개발한 많은 도구를 기반으로 하는 몇 가지 visual recognition 문제에 대해서도 설명할 것인데. Object detection, image captioning과 같이 image classification과 관련된 여러 가지 visual recognition 문제가를 다룰 것이다. Object detection 구조는 고양이, 개, 말 그 외 전체 이미지를 분류하는 것과는 조금 다른데. 대신 bounding box를 그리고 여기 고양이가 있고 여기 개가 있고 저기 배경에 자동차가 있다며 이미지 안에 있는 객체에다가 박스를 그려서 설명하는 것이다.
+
+또한 image captioning에 대해서도 이야기를 할 것인데. 이미지가 주어지면 시스템은 이미지를 설명하는 자연어 문장을 만들어야 하는데, 정말 어렵고 복잡하며 다른 문제인 것 같지만, 이미지 분류를 위해 개발한 많은 도구들이 다른 문제에서도 재사용될 된다.
+
+CNN은 사물 인식의 중요한 도구가 되었는데, 앞서 ImageNet Challenge라는 맥락에서 언급했지만, 최근 몇년간 이 분야의 발전을 이끈 것 중 하나는 CNN(혹은 convnets라 불리는)의 채택이었다.
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/imagenet.png?raw=true)
+지난 몇년간 ImageNet 챌린지에서 우승한 알고리즘을 살펴보면 2011년에는 우리는 이 방법을 여전히 계층적인데 다중 레이어로 구성되어 있다. 그런 다음 일부 local invariances 요소를 계산하고 일부는 pooling 한 다음 여러 계층의 처리 과정을 거쳐 최종적으로 이 설명자를 linear SVN에 제공한다.
 
 
 ## Release note

@@ -94,6 +94,8 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 
 Machine learning 알고리즘의 대부분은 graphic model, support vector machine 또는 AdaBoost인지 여부는 중요하지 않다. 교육 과정에서 지나치게 적합(overfit) 할 가능성이 높으며 일부 문제는 시작 데이터가 매우 복잡하다는 것이다. 복잡하게 되면 모델은 높은 차원의 입력을 가지는 경향이 있고, 많은 매개 변수를 필요로 한다. 충분한 교육 데이터(training data)가 없을 때. 과적합(overfiting)은 매우 빠르게 일어나며 일반화(generalize) 하기가 어렵다. 두 가지 이유에 의해 동기부여가 되는데 하나는 세계의 모든 객체 인식하고 싶다는 것이고 다른 하나는 [machine learning으로 돌아와서] 과적합의 병목 현상을 극복하는 것이다. 그렇게 ImageNet이라는 프로젝트를 시작하게 된다.
 
+### ImageNet
+
 ![](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
 [Image from](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
 
@@ -138,6 +140,8 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 ![](https://sherryl93.github.io/assets/images/alexnet.jpg)
 [Image from](https://sherryl93.github.io/assets/images/alexnet.jpg)
 2012년에 만들어진 이 설계구조는 1990년의 망과 많은 구조적 유사점을 공유하는데. 그렇다면 이 알고리즘은 왜 갑자기 수면 위로 올라오게 되었는가?라고 의문이 들 텐데. 90년대 이후 변한 몇 가지 중요한 혁신이 있다. 하나는 컴퓨터의 계산능력인데 (Thanks to Moore's law) 우리는 매년 더 빨라진 컴퓨터를 사용하고 있다. 조금 투박한 측정이긴 하지만 컴퓨터 칩에 있는 트랜지스터의 수만 보더라도 90년대와 오늘날 사이에 몇 배나 커졌기 때문이다. 또한 GPU의 등장이 있는데, GPU의 super parallelizable 한(병렬 처리가 매우 잘 되는) 이유로 결국엔 계산 집약적인 CNN 모델을 처리하기 위한 완벽한 도구가 되었다. 따라서 더 많은 계산을 처리할 수 있게 되면서 연구원들로 하여금 더 큰 아키텍처와 대형 모델을 탐색할 수 있게 하였다. 어떤 경우에는 모델 크기를 늘리면서도 이런 고전적인 접근 방식과 고전적인 알고리즘을 사용하는 것이 잘 작동하는 경향이 있다. 따라서 계산을 증가시키는 아이디어는 deep learning의 역사에 있어서 매우 중요하다.
+
+
 
 
 

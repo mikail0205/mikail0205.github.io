@@ -131,7 +131,8 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 ## Release note
 2018-05-20 : First upload  
 2018-05-22 : Update  
-2018-05-26 : Update
+2018-05-26 : Update  
+2018-05-31 : Update
 
 
 ## References

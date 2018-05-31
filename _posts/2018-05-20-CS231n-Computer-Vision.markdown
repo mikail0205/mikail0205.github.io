@@ -33,12 +33,14 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 ### Human vision
 기계적인 시각 혹은 카메라를 만드는 인간의 역사는 어떨까? 초기 카메라 중 하나는 1600년대 르네상스 시대의 카메라 'Obscura'에서 나온 것이다.
 ![](http://www.creativephotography.org/exhibits/richard-torchia/trchedu/diagrams/coenxx.gif)
+
 [Image from](http://www.creativephotography.org/exhibits/richard-torchia/trchedu/diagrams/coenxx.gif)
 이 카메라는 핀홀(Pinhole) 카메라 이론에 기반을 둔 카메라이며 동물들이 빛을 모으기 위해 발달한 초기의 눈과 매우 유사하다. 생물 학자들은 시력의 메커니즘을 연구하기 시작했는데, computer vision뿐만 아니라 동물의 시각과 인간 시각의 가장 영향력 있는 작업 중 하나는 전기생리학(electrophysiology)을 사용하는 1950~60년대 Hubel과 Wiesel이 수행한 작업이다. 그들이 물었던 질문은
 > 영장류와 포유류에서와 같은 시각적 메커니즘은 무엇인가?였다.
 
 그래서 그들은 시각적 처리 관점에서 인간의 뇌와 어느 정도 유사한 고양이 뇌를 연구하기로 결심했으며, 그들이 한 일은 주요 시각 피질 영역이 있는 고양이 두뇌의 뒷부분에 전극을 찔러 넣고. 그 다음 고양이 뇌의 주요 시각 피질의 뒷부분의 뉴런을 흥분시키는 자극을 보는 것이었다.
 ![](https://user-images.githubusercontent.com/32008883/30751966-dea3b4c2-9ff5-11e7-870d-44140ff3b480.JPG)
+
 [Image from](https://user-images.githubusercontent.com/32008883/30751966-dea3b4c2-9ff5-11e7-870d-44140ff3b480.JPG)
 
 그렇게 알게 된 사실은 고양이 두뇌의 주요 시각 피질 부분에 많은 종류의 세포가 있다는 것이었다. 그러나 가장 중요한 세포 중 하나는 특정 방향으로 움직일 때 지향성(oriented) edge에 반응하는 단순 세포였다. 물론 더 복잡한 세포도 있지만, 그들이 발견한 것은 시각적인 처리가 시각적 세계의 단순한 구조, 지향적인 윤곽기반에서부터 시작되고 정보가 시각적 처리 경로를 따라 이동함에 따라 뇌가 복잡한 시각 세계를 인식할 때까지 시각 정보의 복잡성을 구축하게 된다.
@@ -47,6 +49,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 
 따라서 컴퓨터 비전의 역사 역시 1960 년대 초반부터 시작된다. 'Block world'는 Larry Roberts가 출판 한 작품으로, 시각적 세계가 단순한 기하학적 모양으로 단순화되고 목표가 인식 할 수 있는 컴퓨터 비전의 첫 번째 PHD 학위 논문 중 하나로 널리 알려져 있다.
 ![](http://www.packet.cc/images/mach-per-fig2.jpg)
+
 [Image from](http://www.packet.cc/images/mach-per-fig2.jpg)
 
 1966 년에 "Summer Vision Project"라는 유명한 MIT 여름 프로젝트가 있었는데. 이 프로젝트의 목표는 visual system의 중요한 부분을 구성하는 데 바로 여름 노동자들을 효율적으로 사용하려는 시도였다. 50여 년이 지난 지금도 컴퓨터 비전 분야는 한 여름 프로젝트에서 전 세계 수 천명의 연구자들로 피어나고 있으며, 여전히 vision의 가장 근본적인 문제 중 일부를 다루고 있다. 아직 vision을 해결하지 못했지만 인공 지능 분야에서 가장 중요하고 빠르게 성장하는 분야 중 하나가 되었다.
@@ -54,6 +57,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 또 한 명의 경의를 표해야 할 사람은 'David Marr'이다. MIT 과학자로 1970년대 후반에 그의 vision에 대한 생각과 우리가 computer vision에 대해 어떻게 접근해야 하는지 그리고 컴퓨터로 시각적 세계(visual world)를 인식할 수 있게 하는 알고리즘을 개발하는 것에 대한 영향력 있는 책을 저술했다. 그 책의 내용은 이미지를 취하고 시각적 세계의 마지막인 3차원 표현에 도달하기 위해 여러 과정을 거쳐야 한다는 것이다.
 
 ![](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/GOMES1/img1.gif)
+
 [Image from](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/GOMES1/img1.gif)
 
 첫 번째 과정은 '원시 스케치 (primal sketch)'라고 부른다. 대부분 가장자리, 바, 끝, 가상 선, 커브, 경계가 표현되는 곳이며 신경과학자(neuroscientist)들이 보았던 것에서 영감을 받았다. Hubel과 Wiesel은 시각적 처리의 초기 단계가 모서리(edge)와 같은 간단한 구조와 관련이 있다고 말했다. 다음 단계는 "2-and-half-D sketch"라고 부른다. visual scene의 surfaces, depth information, layers 또는 시각 화면의 불연속 부분을 함께 조각하기 시작한 다음 결국 모든 것을 모아서 surface 및 volumetric primitives 등을 통해 계층적으로(hierarchically organized) 구성된 3차원 모델을 갖게 되는데 이것은 vision이 무엇인지와 그러한 사고방식에 대한 매우 이상적인 사고 과정이었다. 실제로 수십 년 동안 computer vision을 지배해 왔으며 학생들이 시각 영역(field of visual)에 들어가서 시각적 정보를 분석하는 방법을 생각하는 데 매우 직관적인 방법이기도 하다.
@@ -61,6 +65,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 1970년대에 또 하나의 매우 중요한 세미나 그룹이 생겨났다. 사람들이 "단순한 블록 세계를 넘어서 어떻게 현실 세계의 대상을 인식하고 표현할 수 있을까?"하는 질문을 하기 시작했다. 그 당시를 생각해보면, 사용 가능한 데이터가 거의 없다시피 했으며 컴퓨터는 느리고 PC도 주변에 있지 않았지만 컴퓨터 과학자들은 우리가 어떻게 물체를 인식하고 표현할 수 있는지 생각하기 시작했다. 그래서 스탠포드와 SRI(Standford Research Insititue) 두 그룹에서 과학자들이 유사한 아이디어를 제안했는데 하나는 일반화된 실린더(generalized cylinder) 다른 하나는 그림구조(pictorial structure)라고 불렀다.
 
 ![](https://user-images.githubusercontent.com/32008883/30751987-f03d50e4-9ff5-11e7-8650-70da272845b6.JPG)
+
 [Image from](https://user-images.githubusercontent.com/32008883/30751987-f03d50e4-9ff5-11e7-8650-70da272845b6.JPG)
 
 기본 개념은 모든 객체가 단순한 기하학적 기본 요소로 구성된다는 것이다. 예를 들어 사람은 "일반화된 실린더" 모양으로 함께 결합될 수 있거나 혹은 사람은 그들의 탄성 거리(elastic distance)에 있는 핵심 부분(critical part)에 의해 결합될 수 있다는 것. 따라서 어느 표현이라도 객체의 복잡한 구조를 더 단순한 형태의 집합과 기하학적 구성으로 축소하는 방법이다.
@@ -77,18 +82,24 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 
 기초 과학 연구에서 실제 세상에 응용까지 매우 빠른 인계였으며 어떻게 하면 물체를 더 잘 인식할 수 있을지 지속적으로 연구하고 있다. 1990년대 후반부터 2000년대 초반까지 가장 영향력 있었던 사고방식 중 하나는 feature 기반의 물체 인식이었다. SIFT feature라고 불리는 David Lowe의 작업이 있는데.
 ![](https://user-images.githubusercontent.com/32008883/30752062-1eba20aa-9ff6-11e7-92d5-38e5bb037353.JPG)
+
 [Image from](https://user-images.githubusercontent.com/32008883/30752062-1eba20aa-9ff6-11e7-92d5-38e5bb037353.JPG)
+
 예를 들자면 정지신호가 있는데 문제는 이 정지신호를 다른 정지신호와 일치시키는 일은 매우 어려운데 바로 카메라의 각도, 시점, 조명 및 객체 자체의 고유한 변형으로 인해 그렇다. 하지만 관찰하던 중 객체에는 변화에 영향을 받지 않는 어떠한 특징이 있다는 사실에 영감을 얻게 되면서 객체 인식은 중요한 feature를 식별하고 유사 객체와 feature를 일치시키는 것으로 시작이 된다. 이는 전체 객체를 일치시키는 것보다 쉬운 작업이기 때문이다. 따라서 위 그림은 하나의 정지 표시로부터 SIFT 특징들이 식별되며 다른 정지 표지의 SIFT 특징들과 일치한다는 것을 보여주는 그림이다.
 
 한 걸음 더 나아가 feature를 사용하여 전체론적(holistic) 장면을 인식하기 시작했다. 한 예로 'Spatial Pyramid Matching'이라 불리는 알고리즘이 있는데.
 ![](https://www.researchgate.net/profile/Michael_Mayo4/publication/254051049/figure/fig1/AS:298045649506304@1448071028274/Spatial-pyramid-matching.png)
+
 [Image from](https://www.researchgate.net/profile/Michael_Mayo4/publication/254051049/figure/fig1/AS:298045649506304@1448071028274/Spatial-pyramid-matching.png)
+
 이 아이디어는 풍경이나, 부엌, 고속도로 등 어떤 장면 유형이든 상관없이 feature가 있고 그 장면이 무엇인지에 대한 단서를 제공한다는 것이다. 이 작업은 이미지의 다른 부분과 다른 해상도에서 feature를 가져와 feature discriptor에 넣고 그 위에 vector machine 알고리즘을 사용하는 것이다. 매우 유사한 연구가 인간 인지(human recognition)에 힘을 얻고 있다. 이러한 feature를 잘 정리하면 보다 현실적인 이미지로 인체를 구성하고 인식할 수 있는 방법을 모색하는 많은 작업을 수행할 수 있다. ("Histogram of gradients", "deformable part models"와 같은 영상 feature 방법이 있다.)
 > feature descriptor : 유용한 정보를 추출하고 불필요한 정보를 버림으로써 이미지를 단순화하는 이미지 또는 이미지 패치 표현.
 
 1960년대를 지나 21세기 초까지, 한가지 변화는 사진의 품질이다. 인터넷의 성장과 함께 디지털카메라는 computer vision을 연구하기 위해 더 좋은 데이터를 가지게 되었고 2000년대 초의 결과 중 하나는 computer vision 분야가 해결해야 할 중요한 feature 문제를 정의했다는 것이다. 물론 이것은 해결해야 할 유일한 문제가 아니지만 인식의 측면에서, 객체 인식(object recognition)을 해결하는 매우 중요한 문제이다. 지금까지 객체 인식에 대해서 계속 이야기하고 있는데. 스탠퍼드에서 2000년대 초반에 객체 인식의 진행 상황을 측정할 수 있는 벤치마크 데이터셋을 만들기 시작한다. 바로 가장 영향력 있는 벤치마크 데이트셋 중 하나인 **"PASCAL Visual Object Challenge"**이다. 20개의 객체 클레스들로 구성된 데이터셋이며 기차, 비행기, 사람, 고양이, 소 등이 있고 데이터셋의 범주당 수천에서 수만 가지의 이미지로 구성되며 field마다 testing set에 대해 테스트를 하고 진행 상황을 확인하는 알고리즘을 개발하게 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/pvoc2012.png?raw=true)
+
 [Image from](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/pvoc2012.png?raw=true)
+
 여기 2007 ~ 2012년까지 보여주는 차트가 있는데. 벤치마크 데이터셋에서 이미지의 object 감지 성능이 꾸준히 증가하는 걸 볼 수 있듯. 많은 진전이 있을 즘에 Princeton에서 Stanford에 이르기까지 스스로에게 더 어려운 질문을 하기 시작한다.
 > 즉 "과연 우리가 세상의 모든 것을 인식할 준비가 되어있는가?"이다.
 
@@ -97,6 +108,7 @@ Machine learning 알고리즘의 대부분은 graphic model, support vector mach
 ### ImageNet
 
 ![](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
+
 [Image from](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
 
 > ImageNet 프로젝트는 시각적 객체 인식 소프트웨어 연구에 사용하도록 설계된 대형 시각적 데이트베이스이다. 1400만 개가 넘는 이미지 URL이 ImageNet에 의해 손으로 주석 처리되어 어떤 물체가 그려지는지 알려준다. 적어도 백만개의 이미지에서 bounding box가 제공되며 ImageNet에는 2만 개 이상의 모호한 범주가 있다.
@@ -109,10 +121,12 @@ Machine learning 알고리즘의 대부분은 graphic model, support vector mach
 
 특히나 중요한 것은 "어떻게 과정을 벤치마크 할 것인가"인데. 2009년을 시작으로 ImageNet 팀은 국제적인 대회를 열었고 (ImageNet Large-Scale Visual Recognition Challenge)이 대회를 위해서 더욱 강화된 test set(140만 개의 객체와 1,000개의 object classes로 구성된)을 준비했다. 그리고 이것은 computer vision 알고리즘의 결과를 위해 이미지 분류 인식을 테스트 하기 위함이다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/LSVRC.png?raw=true)
+
 [Image from](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/LSVRC.png?raw=true)
 
 그리고 예제 사진처럼 만약 알고리즘의 결과가 5개의 label을 출력할 수 있고 상위 다섯 개의 label이 올바른 객체를 포함하고 있다면 '성공'이라 부른다.
 ![](https://www.researchgate.net/profile/Gustav_Von_Zitzewitz/publication/324476862/figure/fig7/AS:614545865310213@1523530560584/Winner-results-of-the-ImageNet-large-scale-visual-recognition-challenge-LSVRC-of-the.png)
+
 [Image from](https://www.researchgate.net/profile/Gustav_Von_Zitzewitz/publication/324476862/figure/fig7/AS:614545865310213@1523530560584/Winner-results-of-the-ImageNet-large-scale-visual-recognition-challenge-LSVRC-of-the.png)
 
 ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 에러율이 지속적으로 줄어들고 2012년에 큰 폭으로 줄어드는데 비록 이미지 인식에(이번 강의에서 배우게 될) 대한 모든 문제를 풀지는 못 했지만 엄청난 진전을 이루었으며 실세계 응용 프로그램이 ImageNet 도전과제에서 사람과 **(여기서 사람이란 한 명의 스탠포드 대학 박사학위 학생인데 마치 대회에 참여하는 컴퓨터인 것처럼 몇 주간 일을 했다.)** 동등한 수준으로 오류율을 좁히는 데는 몇 년 밖에 걸리지 않았다. 그리고 특별히 주목해야 할 순간은 2012년인데. 처음 2년 동안은 오류율가 25%에 머물렀던 것이 2012년에는 10%나 떨어져 16%가 되었다. 물론 지금은 더 좋지만 그만한 감소율은 significant하고 그 해 우승을 차지한 알고리즘은 CNN( convolutional neural network) 모델인데 다른 알고리즘을 다 물리치고 ImageNet Challenge의 우승을 차지했다. 이 강의는 deep learning 이라고도 불리는 CNN모델에 대해 심층적으로 다루며 이 모델들이 무엇인지, 무엇이 좋은지, 그리고 이 모델의 최근 진행 상황은 무엇인지를 공부할 것이다. 역사가 만들어진 곳은 2012년 CNN 모델인데. 자연어 처리 및 음성 인식과 같은 다른 여러 자매 분야와 함께 computer vision에서 좋은 발전을 이루는데 막대한 역량과 능력을 보여주었기 때문이다.
@@ -120,17 +134,21 @@ ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 
 ## Justin's talk
 CS213n 강의에 대해서 조금 더 말하자면, visual recognition에서 가장 중요한 문제 중 하나인 image classification을 다룬다. Image classification의 구조는 알고리즘이 이미지를 보고 고정된 집합의 범주에서 선택하여 해당 이미지를 분류하는 것인데. 이것은 제한적이거나 인위적인 설정으로 보일 수도 있지만, 사실 꽤 일반적이다. 그리고 산업계와 학계 그리고 많은 다양한 분야에서 적용될 수 있는데. 예를 들어, 음식을 인식하거나, 음식의 칼로리를 인식하거나 세상의 예술품, 제품들을 인식하는데 적용할 수 있다. 따라서 이 상대적으로 기본적인 영상 분류 도구는 그 자체적으로 매우 유용하며 여러 가지 용도로 전 세계에 적용할 수 있다.
 ![](http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1522766480/1_6j34dAOTijqP6HDFnjxPFA_udggex.png)
+
 [Image from](http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1522766480/1_6j34dAOTijqP6HDFnjxPFA_udggex.png)
+
 이 과정에서는 image classification을 위해 개발한 많은 도구를 기반으로 하는 몇 가지 visual recognition 문제에 대해서도 설명할 것인데. Object detection, image captioning과 같이 image classification과 관련된 여러 가지 visual recognition 문제를 다룰 것이다. Object detection 구조는 고양이, 개, 말 그 외 전체 이미지를 분류하는 것과는 조금 다른데. 대신 bounding box를 그리고 여기 고양이가 있고 여기 개가 있고 저기 배경에 자동차가 있다며 이미지 안에 있는 객체에다가 박스를 그려서 설명하는 것이다.
 
 또한 image captioning도 다룬다. 이미지가 주어지면 시스템은 이미지를 설명하는 자연어 문장을 만들어야 하는데, 정말 어렵고 복잡하며 다른 문제인 것 같지만, 이미지 분류를 위해 개발된 많은 도구들이 다른 문제에서도 재사용 된다.
 
 CNN은 사물 인식의 중요한 도구가 되었는데, 앞서 ImageNet Challenge 맥락에서 언급했지만, 최근 몇년간 이 분야의 발전을 이끈 것 중 하나는 CNN(혹은 convnets / deep learning이라 불리는)의 채택이었다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/imagenet.png?raw=true)
+
 지난 몇년간 ImageNet 챌린지에서 우승한 알고리즘을 살펴보자. 2011년 Lin CVPR 2011을 보면 이 방법은 여전히 계층적인데, 다중 레이어로 구성되어 있다. 그런 다음 일부 local invariances 요소를 계산하고 일부는 pooling 한 다음 여러 계층의 처리 과정을 거쳐 최종적으로 이 resulting descriptor를 linear SVN에 제공한다. 여기서 주목할 것은 이것이 여전히 계층적이라는 것이다. 우리는 여전히 edges를 감지하며. 아직도 불변성(invariance)에 대한 개념을 가지고 있다. 그리고 많은 직관(intuition)들이 CNN으로 넘어갈 것이다.
 그러나 놀라운 순간은 2012년 Jeff Hinton's의 토론토 그룹이 그의 PhD 학생이었던 Alex Krizhevsky와 Ilya Sutskever와 함께 AlexNet이라 알려 진(그 후 Supervision이라고 불린다. 2012년 ImageNet 대회에서 좋은 성적을 거두었다.) 7개의 층을 가진 CNN을 만들었다는 것이다. 그때부터 매년 ImageNet의 우승자는 신경망을 사용했으며. 그리고 이 신경망 트렌드는 매년 점점 더 깊어져 가고 있다. AlexNet은 7~8계층의 신경망이지만 정확히는 어떻게 계산하느냐에 따라 다르긴 하다. 2015년에는 훨씬 더 깊은 망을 가지게 되었는데 구글에서 만든 GoogleNet 그리고 VGG가 있다. VGG는 당시 Oxford에서 19개 층으로 구성된 네트워크이다. 그러고 2015년 정말 미쳤는데 당시 152개의 층을 가진 Microsoft Reserach Asia에서 만든 Residual Networks라는 녀석이 있다. 그리고 나서 200개까지 층이 올라가며 조금 더 성능이 좋아지게 되지만 GPU 메모리 성능이 부족하게 된다. 이 부분은 나중에 다시 이야기하도록 하고, 여기서 중요한 것은 2012년에 이런 획기적인 순간이 있었다는 것인데. 그 이후로 알고리즘을 더 잘 조정하고 다루기 위해서 많은 노력을 해오고 있다.
 CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성과를 냈을 때였지만, 이 알고리즘은 사실 그전부터 꽤 오랫동안 존재해 왔다. 그래서 이 CNN에 있어 기반을 다진 작업은 90년대에 그 당시 Bell 연구실에 있던 Jan LeCun과 그 동료들로부터 만들어졌다.
 ![](https://www.rsipvision.com/wp-content/uploads/2015/04/Slide7.png)
+
 [Image from](https://www.rsipvision.com/wp-content/uploads/2015/04/Slide7.png)
 
 1998년에 숫자를 인식하기 위해 CNN을 만들게 되었는데 이것을 배치하여 우체국의 손으로 쓴 수표나 주소를 자동으로 인식할 수 있기를 원했다. 그리고 이 CNN은 이미지의 픽셀을 받아서 숫자인지 혹은 문자인지 혹은 그 외의 것들을 분류할 수 있게 되었다. 이 망의 구조는 2012년에 사용된 AlexNet의 구조와 매우 유사한데. 여기 보이는 것처럼 우리는 이 원시 픽셀을 입력받으며 완전히 연결된 계층(fully connected layers)과 함께 많은 콘볼루션 계층과 sub-sampling을 가지고 있다. 이 모든 것들은 나중에 더 자세히 설명하게 될 것이지만, 두 그림은 보기만 해도 꽤 유사해 보인다.
@@ -139,13 +157,8 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 
 ![](https://sherryl93.github.io/assets/images/alexnet.jpg)
 [Image from](https://sherryl93.github.io/assets/images/alexnet.jpg)
+
 2012년에 만들어진 이 설계구조는 1990년의 망과 많은 구조적 유사점을 공유하는데. 그렇다면 이 알고리즘은 왜 갑자기 수면 위로 올라오게 되었는가?라고 의문이 들 텐데. 90년대 이후 변한 몇 가지 중요한 혁신이 있다. 하나는 컴퓨터의 계산능력인데 (Thanks to Moore's law) 우리는 매년 더 빨라진 컴퓨터를 사용하고 있다. 조금 투박한 측정이긴 하지만 컴퓨터 칩에 있는 트랜지스터의 수만 보더라도 90년대와 오늘날 사이에 몇 배나 커졌기 때문이다. 또한 GPU의 등장이 있는데, GPU의 super parallelizable 한(병렬 처리가 매우 잘 되는) 이유로 결국엔 계산 집약적인 CNN 모델을 처리하기 위한 완벽한 도구가 되었다. 따라서 더 많은 계산을 처리할 수 있게 되면서 연구원들로 하여금 더 큰 아키텍처와 대형 모델을 탐색할 수 있게 하였다. 어떤 경우에는 모델 크기를 늘리면서도 이런 고전적인 접근 방식과 고전적인 알고리즘을 사용하는 것이 잘 작동하는 경향이 있다. 따라서 계산을 증가시키는 아이디어는 deep learning의 역사에 있어서 매우 중요하다.
-
-
-
-
-
-
 
 
 ## Release note

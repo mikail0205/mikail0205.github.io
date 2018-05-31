@@ -119,7 +119,7 @@ ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 
 
 처음 2년 동안은 오류율가 25%에 머물렀던 것이 2012년에는 10%나 떨어져 16%가 되었다. 물론 지금은 더 좋지만 그만한 감소율은 significant하고 그 해 우승을 차지한 알고리즘은 CNN( convolutional neural network) 모델인데 다른 알고리즘을 다 물리치고 ImageNet Challenge의 우승을 차지했다. 이 강의는 deep learning 이라고도 불리는 CNN모델에 대해 심층적으로 다루며 이 모델들이 무엇인지, 무엇이 좋은지, 그리고 이 모델의 최근 진행 상황은 무엇인지를 공부할 것이다. 역사가 만들어진 곳은 2012년 CNN 모델인데. 자연어 처리 및 음성 인식과 같은 다른 여러 자매 분야와 함께 computer vision에서 좋은 발전을 이루는데 막대한 역량과 능력을 보여주었기 때문이다.
 
-## Justin's talk
+## Vision Recognition
 CS213n 강의에 대해서 조금 더 말하자면, visual recognition에서 가장 중요한 문제 중 하나인 image classification을 다룬다. Image classification의 구조는 알고리즘이 이미지를 보고 고정된 집합의 범주에서 선택하여 해당 이미지를 분류하는 것인데. 이것은 제한적이거나 인위적인 설정으로 보일 수도 있지만, 사실 꽤 일반적이다. 그리고 산업계와 학계 그리고 많은 다양한 분야에서 적용될 수 있는데. 예를 들어, 음식을 인식하거나, 음식의 칼로리를 인식하거나 세상의 예술품, 제품들을 인식하는데 적용할 수 있다. 따라서 이 상대적으로 기본적인 영상 분류 도구는 그 자체적으로 매우 유용하며 여러 가지 용도로 전 세계에 적용할 수 있다.
 
 ![](http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1522766480/1_6j34dAOTijqP6HDFnjxPFA_udggex.png)
@@ -131,7 +131,11 @@ CS213n 강의에 대해서 조금 더 말하자면, visual recognition에서 가
 CNN은 사물 인식의 중요한 도구가 되었는데, 앞서 ImageNet Challenge 맥락에서 언급했지만, 최근 몇년간 이 분야의 발전을 이끈 것 중 하나는 CNN(혹은 convnets / deep learning이라 불리는)의 채택이었다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/imagenet.png?raw=true)
 
+### ImageNet
+
 지난 몇년간 ImageNet 챌린지에서 우승한 알고리즘을 살펴보자. 2011년 Lin CVPR 2011을 보면 이 방법은 여전히 계층적인데, 다중 레이어로 구성되어 있다. 그런 다음 일부 local invariances 요소를 계산하고 일부는 pooling 한 다음 여러 계층의 처리 과정을 거쳐 최종적으로 이 resulting descriptor를 linear SVN에 제공한다. 여기서 주목할 것은 이것이 여전히 계층적이라는 것이다. 우리는 여전히 edges를 감지하며. 아직도 불변성(invariance)에 대한 개념을 가지고 있다. 그리고 많은 직관(intuition)들이 CNN으로 넘어갈 것이다.
+
+### AlexNet
 
 그러나 놀라운 순간은 2012년 Jeff Hinton's의 토론토 그룹이 그의 PhD 학생이었던 Alex Krizhevsky와 Ilya Sutskever와 함께 AlexNet이라 알려 진(그 후 Supervision이라고 불린다. 2012년 ImageNet 대회에서 좋은 성적을 거두었다.) 7개의 층을 가진 CNN을 만들었다는 것이다.
 
@@ -146,6 +150,8 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 > Sampling : 
 
 ![](https://sherryl93.github.io/assets/images/alexnet.jpg)
+
+### Why these algorithms are suddenly become popular?
 
 2012년에 만들어진 이 설계구조는 1990년의 망과 많은 구조적 유사점을 공유하는데. **그렇다면 이 알고리즘은 왜 갑자기 수면 위로 올라오게 되었는가?라고 의문이 들 텐데**. 90년대 이후 변한 몇 가지 중요한 혁신들이 있다. 하나는 컴퓨터의 계산능력인데 (Thanks to Moore's law) 우리는 매년 더 빨라진 컴퓨터를 사용하고 있다. 조금 투박한 측정이긴 하지만 컴퓨터 칩에 있는 트랜지스터의 수만 보더라도 90년대와 오늘날 사이에 몇 배나 커졌기 때문이다. 또한 GPU의 등장이 있는데, GPU의 super parallelizable 한(병렬 처리가 매우 잘 되는) 이유로 결국엔 계산 집약적인 CNN 모델을 처리하기 위한 완벽한 도구가 되었다. 따라서 더 많은 계산을 처리할 수 있게 되면서 연구원들로 하여금 더 큰 아키텍처와 대형 모델을 탐색할 수 있게 하였다. 어떤 경우에는 모델 크기를 늘리면서도 이런 고전적인 접근 방식과 고전적인 알고리즘을 사용하는 것이 잘 작동하는 경향이 있다. 따라서 계산을 증가시키는 아이디어는 deep learning의 역사에 있어서 매우 중요하다.
 

@@ -8,7 +8,11 @@ categories:
 tags: ComputerVision, ML
 ---
 
-{% includes youtubePlayer.html id=page.vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk %}
+{% include youtubePlayer.html id=page.vT1JzLTH4G4 %}
+
+{% include 파일명.html id="vT1JzLTH4G4" %}
+
+[![예제](http://img.youtube.com/vi/vT1JzLTH4G4/0.jpg)](https://www.youtube.com/watch?v=vT1JzLTH4G4=0s)
 
 ## Computer Vision
 컴퓨터 비전은 visual data[시각 데이터]에 대한 연구이다. Visual data의 양은 계속해서 증가하고 있는데, 2017년에 모든 인터넷의 80%에 해당하는 자료가 비디오가 될 것이다는 CISCO의 연구도 있다.

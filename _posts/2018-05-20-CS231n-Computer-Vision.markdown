@@ -11,6 +11,8 @@ tags: ComputerVision, ML, CS231n
 
 { % youtube https://www.youtube.com/watch?v=vT1JzLTH4G4 % }
 
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/vT1JzLTH4G4' frameborder='0' allowfullscreen></iframe></div>
+
 ## Computer Vision
 컴퓨터 비전은 visual data[시각 데이터]에 대한 연구이다. Visual data의 양은 계속해서 증가하고 있는데, 2017년에 모든 인터넷의 80%에 해당하는 자료가 비디오가 될 것이다는 CISCO의 연구도 있다.
 ![](https://www.bleepstatic.com/content/hl-images/2017/03/20/Cisco.jpg)

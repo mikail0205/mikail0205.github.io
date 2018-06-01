@@ -21,9 +21,12 @@ baseurl:
 permalink: pretty
 
 # Plugins
-plugins: [jekyll-youtube]
- # This will require each of these gems automatically.
-
+plugins:
+   - jekyll-mentions
+   - jemoji
+   - jekyll-redirect-from
+   - jekyll-sitemap
+   - jekyll-feed
 # Pagination
 paginate: 10
 #paginate_path: "/page:num/"

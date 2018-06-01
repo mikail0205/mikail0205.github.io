@@ -6,7 +6,7 @@ categories:
  - Computer Vision
  - Machine Learning
  - CS231n
-tags: ComputerVision, ML
+tags: ComputerVision, ML, CS231n
 ---
 
 {% youtube vT1JzLTH4G4 %}

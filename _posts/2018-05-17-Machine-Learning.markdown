@@ -8,6 +8,7 @@ tags: ML
 ---
 
 ![](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/introduction-to-machine-learning_social.png "Machine Learning")
+[Image URL](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/introduction-to-machine-learning_social.png)
 
 ## What is Machine Learning?
 집사 로봇이라던가 터미네이터를 떠올릴 수 있겠지만, 이미 우리 주변에 많이 자리 잡아 있다. 수십 년간 사용되온 스팸 필터 역시 머신 러닝이라 할 수 있다. 이후 추천이나 음성 검색 등으로 발전 했다.
@@ -43,6 +44,7 @@ Explicit programming(명시적 프로그래밍)의 한계.  : SPAM filter, Autom
 ## 세가지 학습 방법 Supervised / Unsupervised / Reinforcement Learning
 
 ![](http://solarisailab.com/wp-content/uploads/2017/06/supervsied_unsupervised_reinforcement.jpg)
+[Image URL](http://solarisailab.com/wp-content/uploads/2017/06/supervsied_unsupervised_reinforcement.jpg)
 **Supervised learning (지도 학습)** : Learning with labeled examples. Label이 붙은 학습을 위한 데이터(training data)가 존재하고 그 데이터로 학습을 하는 것이다. 즉 답이 구성된 데이터(문제)로 알고리즘을 훈련시킨다는 것이며 패턴을 찾아내서 새로운 데이터(문제)의 답을 찾아내는 것. Classification(분류)가 전형적인 지도학습 작업이 되며 스팸 필터가 좋은 예이다. 많은 메일 샘플로 학습하여(스팸인지 아닌지) 어떻게 새 메일을 분류할지 학습하는 것.
 
 또 다른 방법은 예측 변수(predictor variable)라 부르는 특성(feature)를 사용하는 것인데. 중고차(연식, 주행거리, 브랜드 등)라든지, 부동산(방 개수, 이웃 등) 등의 거래 가격 같은 타깃 수치를 예측하는 것이다. 이런 작업을 regression(회귀)라고 부른다.
@@ -53,6 +55,7 @@ label이 일부만 있는 데이터를 학습하는 것을 Semisupervised learni
 
 **Reinforcement learning (강화 학습)** : 앞선 두 가지 학습과는 매우 다른 종류의 학습 알고리즘이다. 앞선 두 가지 학습은 데이터가 주어진 상태로 시작을 하지만 강화 학습은 데이터를 수집하는 과정까지 포함을 한다. 여기서는 학습하는 시스템을 에이전트(agent)라고 부르며 환경(environment)을 관찰해서 행동(action)을 실행하고 그 결과로 보상(reward) 또는 벌점(penalty)를 받는다. 시간이 지나면서 가장 큰 보상을 얻기 위해 정책(policy)라고 부르는 최상의 전략을 스스로 학습 하는 것.
 ![](https://1.bp.blogspot.com/-TYr5fovwVp4/VvY7iT_JJ5I/AAAAAAAAxQg/xayzv5nND2sCh16MINdYjNJDY8qldZdGA/s400/aaa.png "Reinforcement learning")
+[Image URL](https://1.bp.blogspot.com/-TYr5fovwVp4/VvY7iT_JJ5I/AAAAAAAAxQg/xayzv5nND2sCh16MINdYjNJDY8qldZdGA/s400/aaa.png)
 
 위 3가지 학습법 외에도 다양한 학습방법이 있다.
 

@@ -14,6 +14,7 @@ Linear regression을 시작하기 전에 regression analysis(회귀 분석)에 �
 ## Linear Regression (선형 회귀)
 Linear regression은 종속 변수 y와 한 개 이상의 독립 변수 X와의 상관 관계를 모델링하는 Regression Analysis 기법이다.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Normdist_regression.png/300px-Normdist_regression.png)
+[Image URL](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Normdist_regression.png/300px-Normdist_regression.png)
 즉 데이터를 설명하는 선(Line)을 찾는 모델이다.
 
 ## Release Note

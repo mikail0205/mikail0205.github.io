@@ -9,7 +9,7 @@ categories:
 tags: ComputerVision, ML, CS231n
 ---
 
-{% youtube vT1JzLTH4G4 %}
+{% youtube https://www.youtube.com/watch?v=vT1JzLTH4G4 %}
 
 
 ## Computer Vision

@@ -21,11 +21,8 @@ baseurl:
 permalink: pretty
 
 # Plugins
-plugins:
-  - jekyll-gist
-  - jekyll-coffeescript
-  - jekyll-assets
-  - another-jekyll-plugin
+plugins: [jekyll-youtube]
+ # This will require each of these gems automatically.
 
 # Pagination
 paginate: 10

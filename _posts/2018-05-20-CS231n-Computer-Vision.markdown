@@ -11,7 +11,7 @@ tags: ComputerVision, ML
 
 {% include youtubePlayer.html id=page.vT1JzLTH4G4 %}
 
-{% include youtubePlayer.html id="vT1JzLTH4G4" %}
+{% include youtubePlayer.html id="https://www.youtube.com/watch?v=vT1JzLTH4G4" %}
 
 [![CS231n LEC01](http://img.youtube.com/vi/vT1JzLTH4G4/0.jpg)](https://www.youtube.com/watch?v=vT1JzLTH4G4?t=0s)
 

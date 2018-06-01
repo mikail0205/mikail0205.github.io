@@ -5,12 +5,13 @@ date: 2018-05-20
 categories:
  - Computer Vision
  - Machine Learning
+ - CS231n
 tags: ComputerVision, ML
 ---
 
 {% include youtubePlayer.html id=page.vT1JzLTH4G4 %}
 
-{% include 파일명.html id="vT1JzLTH4G4" %}
+{% include youtubePlayer.html id="vT1JzLTH4G4" %}
 
 [![예제](http://img.youtube.com/vi/vT1JzLTH4G4/0.jpg)](https://www.youtube.com/watch?v=vT1JzLTH4G4=0s)
 

@@ -27,6 +27,15 @@ plugins:
    - jekyll-redirect-from
    - jekyll-sitemap
    - jekyll-feed
+   - jekyll-coffeescript
+   - jekyll-gist
+   - jekyll-github-metadata
+   - jekyll-paginate
+   - jekyll-relative-links
+   - jekyll-optional-front-matter
+   - jekyll-readme-index
+   - jekyll-default-layout
+   - jekyll-titles-from-headings	
 # Pagination
 paginate: 10
 #paginate_path: "/page:num/"

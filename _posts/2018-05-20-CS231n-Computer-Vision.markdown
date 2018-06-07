@@ -36,6 +36,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 
 ### Human vision
 기계적인 시각 혹은 카메라를 만드는 인간의 역사는 어떨까? 초기 카메라 중 하나는 1600년대 르네상스 시대의 카메라 'Obscura'에서 나온 것이다.
+
 ![](http://www.creativephotography.org/exhibits/richard-torchia/trchedu/diagrams/coenxx.gif)
 [Image URL] (http://www.creativephotography.org/exhibits/richard-torchia/trchedu/diagrams/coenxx.gif)
 
@@ -45,6 +46,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 그래서 그들은 시각적 처리 관점에서 인간의 뇌와 어느 정도 유사한 고양이 뇌를 연구하기로 결심했으며, 그들이 한 일은 주요 시각 피질 영역이 있는 고양이 두뇌의 뒷부분에 전극을 찔러 넣고. 그 다음 고양이 뇌의 주요 시각 피질의 뒷부분의 뉴런을 흥분시키는 자극을 보는 것이었다.
 
 ![](https://user-images.githubusercontent.com/32008883/30751966-dea3b4c2-9ff5-11e7-870d-44140ff3b480.JPG)
+
 [Image URL](https://user-images.githubusercontent.com/32008883/30751966-dea3b4c2-9ff5-11e7-870d-44140ff3b480.JPG)
 
 그렇게 알게 된 사실은 고양이 두뇌의 주요 시각 피질 부분에 많은 종류의 세포가 있다는 것이었다. 그러나 가장 중요한 세포 중 하나는 특정 방향으로 움직일 때 지향성(oriented) edge에 반응하는 단순 세포였다. 물론 더 복잡한 세포도 있지만, 그들이 발견한 것은 시각적인 처리가 시각적 세계의 단순한 구조, 지향적인 윤곽기반에서부터 시작되고 정보가 시각적 처리 경로를 따라 이동함에 따라 뇌가 복잡한 시각 세계를 인식할 때까지 시각 정보의 복잡성을 구축하게 된다.
@@ -54,6 +56,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 따라서 컴퓨터 비전의 역사 역시 1960 년대 초반부터 시작된다. 'Block world'는 Larry Roberts가 출판 한 작품으로, 시각적 세계가 단순한 기하학적 모양으로 단순화되고 목표가 인식 할 수 있는 컴퓨터 비전의 첫 번째 PHD 학위 논문 중 하나로 널리 알려져 있다.
 
 ![](http://www.packet.cc/images/mach-per-fig2.jpg)
+
 [Image URL](http://www.packet.cc/images/mach-per-fig2.jpg)
 
 1966 년에 "Summer Vision Project"라는 유명한 MIT 여름 프로젝트가 있었는데. 이 프로젝트의 목표는 visual system의 중요한 부분을 구성하는 데 바로 여름 노동자들을 효율적으로 사용하려는 시도였다. 50여 년이 지난 지금도 컴퓨터 비전 분야는 한 여름 프로젝트에서 전 세계 수 천명의 연구자들로 피어나고 있으며, 여전히 vision의 가장 근본적인 문제 중 일부를 다루고 있다. 아직 vision을 해결하지 못했지만 인공 지능 분야에서 가장 중요하고 빠르게 성장하는 분야 중 하나가 되었다.
@@ -61,6 +64,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 또 한 명의 경의를 표해야 할 사람은 'David Marr'이다. MIT 과학자로 1970년대 후반에 그의 vision에 대한 생각과 우리가 computer vision에 대해 어떻게 접근해야 하는지 그리고 컴퓨터로 시각적 세계(visual world)를 인식할 수 있게 하는 알고리즘을 개발하는 것에 대한 영향력 있는 책을 저술했다. 그 책의 내용은 이미지를 취하고 시각적 세계의 마지막인 3차원 표현에 도달하기 위해 여러 과정을 거쳐야 한다는 것이다.
 
 ![](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/GOMES1/img1.gif)
+
 [Image URL](http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/GOMES1/img1.gif)
 
 첫 번째 과정은 **'원시 스케치 (primal sketch)'라고 부른다**. 대부분 가장자리, 바, 끝, 가상 선, 커브, 경계가 표현되는 곳이며 신경과학자(neuroscientist)들이 보았던 것에서 영감을 받았다. Hubel과 Wiesel은 시각적 처리의 초기 단계가 모서리(edge)와 같은 간단한 구조와 관련이 있다고 말했다.
@@ -70,6 +74,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 1970년대에 또 하나의 매우 중요한 세미나 그룹이 생겨났다. 사람들이 "단순한 블록 세계를 넘어서 어떻게 현실 세계의 대상을 인식하고 표현할 수 있을까?"하는 질문을 하기 시작했다. 그 당시를 생각해보면, 사용 가능한 데이터가 거의 없다시피 했으며 컴퓨터는 느리고 PC도 주변에 있지 않았지만 컴퓨터 과학자들은 우리가 어떻게 물체를 인식하고 표현할 수 있는지 생각하기 시작했다. 그래서 스탠포드와 SRI(Standford Research Insititue) 두 그룹에서 과학자들이 유사한 아이디어를 제안했는데 하나는 일반화된 실린더(generalized cylinder) 다른 하나는 그림구조(pictorial structure)라고 불렀다.
 
 ![](https://user-images.githubusercontent.com/32008883/30751987-f03d50e4-9ff5-11e7-8650-70da272845b6.JPG)
+
 [Image URL](https://user-images.githubusercontent.com/32008883/30751987-f03d50e4-9ff5-11e7-8650-70da272845b6.JPG)
 
 기본 개념은 모든 객체가 단순한 기하학적 기본 요소로 구성된다는 것이다. 예를 들어 사람은 "일반화된 실린더" 모양으로 함께 결합될 수 있거나 혹은 사람은 그들의 탄성 거리(elastic distance)에 있는 핵심 부분(critical part)에 의해 결합될 수 있다는 것. 따라서 어느 표현이라도 객체의 복잡한 구조를 더 단순한 형태의 집합과 기하학적 구성으로 축소하는 방법이다.
@@ -87,6 +92,7 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 기초 과학 연구에서 실제 세상에 응용까지 매우 빠른 인계였으며 어떻게 하면 물체를 더 잘 인식할 수 있을지 지속적으로 연구하고 있다. 1990년대 후반부터 2000년대 초반까지 가장 영향력 있었던 사고방식 중 하나는 feature 기반의 물체 인식이었다. SIFT feature라고 불리는 David Lowe의 작업이 있는데.
 
 ![](https://user-images.githubusercontent.com/32008883/30752062-1eba20aa-9ff6-11e7-92d5-38e5bb037353.JPG)
+
 [Image URL](https://user-images.githubusercontent.com/32008883/30752062-1eba20aa-9ff6-11e7-92d5-38e5bb037353.JPG)
 
 예를 들자면 정지신호가 있는데 문제는 이 정지신호를 다른 정지신호와 일치시키는 일은 매우 어려운데 바로 카메라의 각도, 시점, 조명 및 객체 자체의 고유한 변형으로 인해 그렇다. 하지만 관찰하던 중 객체에는 변화에 영향을 받지 않는 어떠한 특징이 있다는 사실에 영감을 얻게 되면서 객체 인식은 중요한 feature를 식별하고 유사 객체와 feature를 일치시키는 것으로 시작이 된다. 이는 전체 객체를 일치시키는 것보다 쉬운 작업이기 때문이다. 따라서 위 그림은 하나의 정지 표시로부터 SIFT 특징들이 식별되며 다른 정지 표지의 SIFT 특징들과 일치한다는 것을 보여주는 그림이다.
@@ -101,7 +107,8 @@ Vision에 대한 역사는 많은 시간을 거슬러 가야 하는데 (정확�
 
 1960년대를 지나 21세기 초까지, 한가지 변화는 사진의 품질이다. 인터넷의 성장과 함께 디지털카메라는 computer vision을 연구하기 위해 더 좋은 데이터를 가지게 되었고 2000년대 초의 결과 중 하나는 computer vision 분야가 해결해야 할 중요한 feature 문제를 정의했다는 것이다. 물론 이것은 해결해야 할 유일한 문제가 아니지만 인식의 측면에서, 객체 인식(object recognition)을 해결하는 매우 중요한 문제이다. 지금까지 객체 인식에 대해서 계속 이야기하고 있는데. 스탠퍼드에서 2000년대 초반에 객체 인식의 진행 상황을 측정할 수 있는 벤치마크 데이터셋을 만들기 시작한다. 바로 가장 영향력 있는 벤치마크 데이트셋 중 하나인 **"PASCAL Visual Object Challenge"**이다. 20개의 객체 클레스들로 구성된 데이터셋이며 기차, 비행기, 사람, 고양이, 소 등이 있고 데이터셋의 범주당 수천에서 수만 가지의 이미지로 구성되며 field마다 testing set에 대해 테스트를 하고 진행 상황을 확인하는 알고리즘을 개발하게 된다.
 
-![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/pvoc2012.png?raw=true)
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/Images/2018/pvoc2012.png?raw=true)
+
 [Image URL](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/pvoc2012.png?raw=true)
 
 여기 2007 ~ 2012년까지 보여주는 차트가 있는데. 벤치마크 데이터셋에서 이미지의 object 감지 성능이 꾸준히 증가하는 걸 볼 수 있듯. 많은 진전이 있을 즘에 Princeton에서 Stanford에 이르기까지 스스로에게 더 어려운 질문을 하기 시작한다.
@@ -111,6 +118,7 @@ Machine learning 알고리즘의 대부분은 graphic model, support vector mach
 
 ### ImageNet
 ![](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
+
 [Image URL](https://www.fanyeong.com/wp-content/uploads/2018/01/v2-718f95df083b2d715ee29b018d9eb5c2_r.jpg)
 
 > ImageNet 프로젝트는 시각적 객체 인식 소프트웨어 연구에 사용하도록 설계된 대형 시각적 데이트베이스이다. 1400만 개가 넘는 이미지 URL이 ImageNet에 의해 손으로 주석 처리되어 어떤 물체가 그려지는지 알려준다. 적어도 백만개의 이미지에서 bounding box가 제공되며 ImageNet에는 2만 개 이상의 모호한 범주가 있다.
@@ -124,11 +132,13 @@ Machine learning 알고리즘의 대부분은 graphic model, support vector mach
 특히나 중요한 것은 "어떻게 과정을 벤치마크 할 것인가"인데. 2009년을 시작으로 ImageNet 팀은 국제적인 대회를 열었고 (ImageNet Large-Scale Visual Recognition Challenge)이 대회를 위해서 더욱 강화된 test set(140만 개의 객체와 1,000개의 object classes로 구성된)을 준비했다. 그리고 이것은 computer vision 알고리즘의 결과를 위해 이미지 분류 인식을 테스트 하기 위함이다.
 
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/LSVRC.png?raw=true)
+
 [Image URL](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
 
 그리고 예제 사진처럼 만약 알고리즘의 결과가 5개의 label을 출력할 수 있고 상위 다섯 개의 label이 올바른 객체를 포함하고 있다면 '성공'이라 부른다.
 
 ![](https://www.researchgate.net/profile/Gustav_Von_Zitzewitz/publication/324476862/figure/fig7/AS:614545865310213@1523530560584/Winner-results-of-the-ImageNet-large-scale-visual-recognition-challenge-LSVRC-of-the.png)
+
 [Image URL](https://www.researchgate.net/profile/Gustav_Von_Zitzewitz/publication/324476862/figure/fig7/AS:614545865310213@1523530560584/Winner-results-of-the-ImageNet-large-scale-visual-recognition-challenge-LSVRC-of-the.png)
 
 ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 에러율이 지속적으로 줄어들고 2012년에 큰 폭으로 줄어드는데 비록 이미지 인식에(이번 강의에서 배우게 될) 대한 모든 문제를 풀지는 못 했지만 엄청난 진전을 이루었으며 실세계 응용 프로그램이 ImageNet 도전과제에서 사람과 **(여기서 사람이란 한 명의 스탠포드 대학 박사학위 학생인데 마치 대회에 참여하는 컴퓨터인 것처럼 몇 주간 일을 했다.)** 동등한 수준으로 오류율을 좁히는 데는 몇 년 밖에 걸리지 않았다. 그리고 특별히 주목해야 할 순간은 2012년인데.
@@ -139,6 +149,7 @@ ImageNet challenge 이미지 분류 결과로 (2011 ~ 2016년) 좋은 소식은 
 CS213n 강의에 대해서 조금 더 말하자면, visual recognition에서 가장 중요한 문제 중 하나인 image classification을 다룬다. Image classification의 구조는 알고리즘이 이미지를 보고 고정된 집합의 범주에서 선택하여 해당 이미지를 분류하는 것인데. 이것은 제한적이거나 인위적인 설정으로 보일 수도 있지만, 사실 꽤 일반적이다. 그리고 산업계와 학계 그리고 많은 다양한 분야에서 적용될 수 있는데. 예를 들어, 음식을 인식하거나, 음식의 칼로리를 인식하거나 세상의 예술품, 제품들을 인식하는데 적용할 수 있다. 따라서 이 상대적으로 기본적인 영상 분류 도구는 그 자체적으로 매우 유용하며 여러 가지 용도로 전 세계에 적용할 수 있다.
 
 ![](http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1522766480/1_6j34dAOTijqP6HDFnjxPFA_udggex.png)
+
 [Image URL](http://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_auto:best/v1522766480/1_6j34dAOTijqP6HDFnjxPFA_udggex.png)
 
 이 과정에서는 image classification을 위해 개발한 많은 도구를 기반으로 하는 몇 가지 visual recognition 문제에 대해서도 설명할 것인데. Object detection, image captioning과 같이 image classification과 관련된 여러 가지 visual recognition 문제를 다룰 것이다. Object detection 구조는 고양이, 개, 말 그 외 전체 이미지를 분류하는 것과는 조금 다른데. 대신 bounding box를 그리고 여기 고양이가 있고 여기 개가 있고 저기 배경에 자동차가 있다며 이미지 안에 있는 객체에다가 박스를 그려서 설명하는 것이다.
@@ -146,7 +157,9 @@ CS213n 강의에 대해서 조금 더 말하자면, visual recognition에서 가
 또한 image captioning도 다룬다. 이미지가 주어지면 시스템은 이미지를 설명하는 자연어 문장을 만들어야 하는데, 정말 어렵고 복잡하며 다른 문제인 것 같지만, 이미지 분류를 위해 개발된 많은 도구들이 다른 문제에서도 재사용 된다.
 
 CNN은 사물 인식의 중요한 도구가 되었는데, 앞서 ImageNet Challenge 맥락에서 언급했지만, 최근 몇년간 이 분야의 발전을 이끈 것 중 하나는 CNN(혹은 convnets / deep learning이라 불리는)의 채택이었다.
+
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/imagenet.png?raw=true)
+
 [Image URL](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
 
 ### ImageNet
@@ -162,6 +175,7 @@ CNN은 사물 인식의 중요한 도구가 되었는데, 앞서 ImageNet Challe
 CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성과를 냈을 때였지만, 이 알고리즘은 사실 그전부터 꽤 오랫동안 존재해 왔다. 그래서 이 CNN에 있어 기반을 다진 작업은 90년대에 그 당시 Bell 연구실에 있던 Jan LeCun과 그 동료들로부터 만들어졌다.
 
 ![](https://www.rsipvision.com/wp-content/uploads/2015/04/Slide7.png)
+
 [Image URL](https://www.rsipvision.com/wp-content/uploads/2015/04/Slide7.png)
 
 1998년에 숫자를 인식하기 위해 CNN을 만들게 되었는데 이것을 배치하여 우체국의 손으로 쓴 수표나 주소를 자동으로 인식할 수 있기를 원했다. 그리고 이 CNN은 이미지의 픽셀을 받아서 숫자인지 혹은 문자인지 혹은 그 외의 것들을 분류할 수 있게 되었다. 이 망의 구조는 2012년에 사용된 AlexNet의 구조와 매우 유사한데. 여기 보이는 것처럼 우리는 이 원시 픽셀을 입력받으며 완전히 연결된 계층(fully connected layers)과 함께 많은 콘볼루션 계층과 sub-sampling을 가지고 있다. 이 모든 것들은 나중에 더 자세히 설명하게 될 것이지만, 두 그림은 보기만 해도 꽤 유사해 보인다.
@@ -169,6 +183,7 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 > Sampling : 
 
 ![](https://sherryl93.github.io/assets/images/alexnet.jpg)
+
 [Image URL](https://sherryl93.github.io/assets/images/alexnet.jpg)
 
 ### Why these algorithms are suddenly become popular?
@@ -185,7 +200,9 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 이 분야에서 나아갈 때, 해결해야 할 많은 도전과 문제들이 있다고 생각하며  야심찬 문제를 해결하기 위해 알고리즘을 계속 개발할 필요가 있다. 이것에 대한 몇 가지 예로 오래된 아이디어로 돌아가면, 이미지 전체에 레이블을 지정하는 대신 이미지의 모든 픽셀을 이해하고 싶다는 것이다. 이것이 무엇을 하는지 혹은 무엇을 의미하는지 등. 이 아이디어는 나중에 살펴보도록 하고.
 
 전 세계를 재구성하는 3차원을 이해하는 아이디어가 분명히 존재할 것인데 아직은 해결되지 않은 문제라고 생각한다. 우리가 상상할 수 있는 수많은 작업들이 있는데 예를 들어 활동 인식의 경우, 어떤 사람이 어떤 활동을 하는 영상을 받았다면 그 활동을 인식하는 가장 좋은 방법이 무엇일까? 하는 것이다. 이것은 꽤 어려운 문제임이 분명하며. 앞으로 증강현실, 가상현실 그리고 새로운 기술이나 센서가 출시됨에 따라 새롭고 흥미롭고 또 어려운 문제를 생각해 낼 것이다.
+
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/visualgenome.png?raw=true)
+
 [Image URL](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
 
 이것은 visual genome이라 불리는 한 예인데(Johnson이 본인 연구실에서 연구한 결과) 현실 세계의 이런 복잡한 것들을 포착하고자 한다. 단순히 상자를 설명하는 것보다는 이미지 정체성뿐만 아니라 객체의 관계, 속성 그리고 장면에서 발생하는 동작을 포함하며 의미론적(semantically)으로 관련된 개념 전체를 그래프로 설명하는데. 이러한 묘사는 간단한 분류를 할 때에 우리로 하여금 시각 세계의 풍부함(richness) 중 일부를 포착할 수 있도록 해준다.
@@ -193,15 +210,17 @@ CNN에 있어 혁신적인 순간은 2012년 ImageNet 챌린지에서 좋은 성
 이 시점에서 결코 표준적인 접근법은 아니지만 이 바닐라 이미지 분류 설정에서는 "시각 시스템이 할 수 있는 일은 너무나도 많다."같은 느낌을 준다.
 > 컴퓨터 소프트웨어나 (컴퓨터 하드웨어 또는 알고리즘과 같은) 컴퓨터 관련 시스템에서 기존 형태에서 사용자 정의되지(customized) 않은 것을 "바닐라"라 부르는데, 이는 사용자 정의나 업데이트 없이 사용된다는 의미이다.
 
-
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/feifei_test.png?raw=true)
+
 [Image URL](https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk)
 
 또 다른 흥미로운 일은, 실제로 Fei-Fei 교수의 대학원 시절, 그곳 고문들과 함께 박사과정을 밟았을 때인데. 이 프로그램에서 사람들을 대상으로 위 사진을 0.5초 동안 보여주었다. 매우 짧은 시간의 노출에도 사람들은 이미지의 전체적인 이야기를 들려주는 긴 설명을 쓸 수 있었으며 그리고 이것이 한 사람이 겨우 0.5초간 이미지를 보고 말한 것이라는 것은 꽤나 놀라운 일이다. 그 사람은 이 이미지가 일종의 게임이나 싸움이라고 말했으며, 두 그룹의 남자들이 있고, 왼쪽에 있는 남자가 뭔가를 던지고 있으며 야외에 잔디 같은 느낌이 든다고 했다. 아마 이 사진을 더 길게 보았다면, 이 사람들이 누구인지, 왜 거기서 게임을 하는지 대한 소설도 쓸 수 있었을 것이다. 그들의 외부 지식과 경험으로부터 무언가를 계속해서 얻을 수 있었을 것인데. 이것은 어떤 의미에서 컴퓨터 비전의 성배(holy grail)라고 할 수 있는데. 일종의 매우 풍부하고 깊은 방법으로 이미지의 내용을 이해하는 것이다.
 > holy grail : 큰 의의를 위해 추구하는 목적, 찾거나 얻기가 극히 어려운 것.
 
 그러나 지난 몇 년 동안 해왔던 이 분야에서의 엄청난 진전에도 불구하고 우리는 여전히 이 성배를 달성하기까지 많이 남았다고 생각한다. 이 아이디어의 좋은 예가 되는 또 다른 이미지를 Andrej Karpathy's의 블로그에서 찾을 수 있는데.
+
 ![](http://karpathy.github.io/assets/obamafunny.jpg)
+
 [Image URL](http://karpathy.github.io/assets/obamafunny.jpg)
 
 이는 정말 놀라운 사진이며 꽤 재밌는 사진이라고 생각을 한다. 그럼 왜 재미있는 사진인가? 우리는 한 사람이 저울에 서있는 것을 알고 있으며, 사람들이 때대로 자신의 체중에 신경 쓰고, 체중을 측정하는 것을 알고 있다. 그리고 그 뒤에 있는 다른 사람이 자신의 발을 체중계에 올려놓고 있고 체중계가 작동하는 방식 때문에 저울은 더 늘어난 수치를 보여고 있다. 게다가 우리는 이 사람이 그냥 아무 사람이 아닌 당시 미국 대통령이었던 버락 오바마이고, 대통령은 이런 식으로 동료들에게 장난을 하지 말아야 할 존경받아야 하는 정치인이라는 것도 알고 있다. 그리고 배경에 뒤에서 웃고, 미소 짓는 사람들이 있다는 것을 알고 있고, 그들이 그 장면에 대해 무언가 이해하고 있다는 것을 알고 있다. 우리는 그들이 앞사람을 보고 있는 오바마 대통령은 존경받아야 하는 사람이라는 것을 알고 있다는 사실을 이해하고 있다. 이건 정말 엄청난데, **이 사진에는 정말 많은 일들이 일어나고 있다는 것이다.**

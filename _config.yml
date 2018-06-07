@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "HyungIn Mikail Choi"
-  avatar           : /assets/images/avatar.gif# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/avatar.jpg# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "KNU_student"
   location         : "Daegu, Korea"
   email            : mikail0205@gmail.com
@@ -111,13 +111,13 @@ author:
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "mikail0205"
   foursquare       :
-  github           :
-  gitlab           : "mikail0205"
+  github           : "mikail0205"
+  gitlab           : 
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "mikail0205"
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :

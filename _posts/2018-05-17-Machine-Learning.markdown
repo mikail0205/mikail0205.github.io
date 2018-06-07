@@ -2,9 +2,11 @@
 title: Machine Learning[머신러닝] 개념
 description:
 date: 2018-05-17
-categories:
- - Machine Learning
+categories: Machine Learning
 tags: ML
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ![](https://community-cdn-digitalocean-com.global.ssl.fastly.net/assets/tutorials/images/large/introduction-to-machine-learning_social.png "Machine Learning")

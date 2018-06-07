@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://mikail0205.github.io/sitemap.xml

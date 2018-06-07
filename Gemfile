@@ -1,4 +1,5 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll", "~> 3.5"
-gem "minimal-mistakes-jekyll"
+gem 'rouge'
+gem 'jekyll'
+gem 'jemoji'

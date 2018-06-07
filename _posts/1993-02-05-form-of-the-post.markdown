@@ -1,4 +1,6 @@
 ---
+comments: true
+image:
 title: Form of the post and basics about markdown
 description:
 date: 1993-02-05

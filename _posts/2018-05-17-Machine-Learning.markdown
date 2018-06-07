@@ -1,4 +1,5 @@
 ---
+comments: true
 title: Machine Learning[머신러닝] 개념
 description:
 date: 2018-05-17

@@ -381,6 +381,7 @@ han: false
 disqus:
   enable: true
   shortname: mikail0205
+  url :https://mikail0205.github.io
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true

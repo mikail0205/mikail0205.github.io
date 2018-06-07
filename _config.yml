@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "HyungIn Mikail Choi"
-  avatar           : /assets/images/avatar.jpg# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /mikail0205.github.io/assets/images/avatar.jpg# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "KNU_student"
   location         : "Daegu, Korea"
   email            : mikail0205@gmail.com

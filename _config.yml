@@ -9,7 +9,12 @@ subtitle: HyungIn's Study life
 
 description: Univ. student of Kyungpook National Univ. Majoring Computer Science and Enigneering. Using this git page for documenting my personal study. 
 
-author: Hyung In Mikail Choi
+author:
+ name: "Hyung In Mikail Choi"
+ bio: "Univ student, born in 1993
+ location: "Daegu, Korea"
+ email : mikail0205@gmail.com
+ github : "mikail0205"
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
 date_format: '%Y-%m-%d'

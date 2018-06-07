@@ -4,9 +4,9 @@ email: mikail0205@gmail.com
 description: Univ. student of Kyungpook National Univ. Majoring Computer Science and Enigneering. Using this git page for documenting my personal study.
 baseurl: 
 # the subpath of your site, e.g. /blog
-url: 
+url: "mikail0205.github.io"
 # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: 
 
 # User Settings
 username: HyungIn Mikail Choi
@@ -15,7 +15,7 @@ disqus_username: Mikail Choi
 
 # Social Media
 # Remove the item if you don't need it
-github_username: github_mikail0205
+github_username: mikail0205
 facebook_username: facebook_mikail0205
 instagram_username: instagram_mikail0205
 linkedin_username: linkedin_mikail0205

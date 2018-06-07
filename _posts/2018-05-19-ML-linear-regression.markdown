@@ -4,8 +4,10 @@ comments: true
 title: Machine Learning[머신러닝] Linear regression(선형 회귀)
 description: Linear regression(선형 회귀)에 대한 정리
 date: 2018-05-19
-categories: Machine Learning
-tags: ML
+categories:
+ - Machine Learning
+tags:
+ - Machine Learning
 sitemap :
   changefreq : daily
   priority : 1.0

@@ -2,8 +2,10 @@
 title: Machine Learning[머신러닝] 개념
 description:
 date: 2018-05-17
-categories: Machine Learning
-tags: ML
+categories:
+ - Machine Learning
+tags:
+ - Machine Learning
 sitemap :
   changefreq : daily
   priority : 1.0

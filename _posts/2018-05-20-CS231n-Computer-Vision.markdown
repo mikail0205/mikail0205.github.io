@@ -9,7 +9,7 @@ categories:
  - CS231n
 tags:
  - Computer Vision
- - ML
+ - Machine Learning
  - CS231n
 sitemap :
   changefreq : daily

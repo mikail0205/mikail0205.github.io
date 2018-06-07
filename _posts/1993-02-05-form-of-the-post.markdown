@@ -4,9 +4,11 @@ image:
 title: Form of the post and basics about markdown
 description:
 date: 1993-02-05
-categories: Markdown
+categories:
+ - Markdown
 
-tags: Markdown
+tags:
+ - Markdown
 ---
 ## Release note
 

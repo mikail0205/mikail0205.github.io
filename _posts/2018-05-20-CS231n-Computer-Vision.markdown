@@ -4,8 +4,6 @@ comments: true
 title: CS231n Lec01 Introduction of Convolutional Neural Networks for Visual Recognition. [번역]
 description: Youtube 온라인 강의 CS231n에 대한 번역
 date: 2018-05-20
-share: true
-image: https://www.researchgate.net/profile/Michael_Mayo4/publication/254051049/figure/fig1/AS:298045649506304@1448071028274/Spatial-pyramid-matching.png
 categories:
  - Computer Vision
  - Machine Learning

@@ -15,7 +15,9 @@ Machine Learning의 문제 Regression & Classification을 풀기 위해 만들�
 H(x) = Wx + b가 될 것이라고 가설을 세우는 것이 1단계가 되겠다. 그리고 어떤 선이 가장 적합한가를 찾는 것.
 
 ![](https://postfiles.pstatic.net/MjAxODA1MTRfMjA1/MDAxNTI2Mjk3OTI4MTU2.5411Q9Ar2IaqOqw_LuCbJcTOov1kYH7eC7upa8b9Zgcg.AnfX6HT0EpzXOnTTC3sEU9ofOTKBSxmvY0GYOQtqQI4g.PNG.goddam0205/2018-05-14.png?type=w773)
+
 [Image URL](https://postfiles.pstatic.net/MjAxODA1MTRfMjA1/MDAxNTI2Mjk3OTI4MTU2.5411Q9Ar2IaqOqw_LuCbJcTOov1kYH7eC7upa8b9Zgcg.AnfX6HT0EpzXOnTTC3sEU9ofOTKBSxmvY0GYOQtqQI4g.PNG.goddam0205/2018-05-14.png?type=w773)
+
 간단한 그림에서 사람은 쉽게 판단하지만, 컴퓨터는 계산이 필요하다. 복잡한(다차원) 그림에서 사람은 눈으로 판단하지 못하지만 컴퓨터는 계산을 통해 판단할 수 있다.
 
 ## Cost(= Loss) : 가설의 오차.

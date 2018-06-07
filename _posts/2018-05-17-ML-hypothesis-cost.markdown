@@ -1,5 +1,4 @@
 ---
-comments: true
 title: Machine Learning[머신러닝] Hypothesis, cost
 description: 머신러닝에 대한 hypothesis와 cost에 대한 정리
 categories:

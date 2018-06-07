@@ -485,8 +485,8 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
-  id:     #<app_id>
+  enable: true
+  id:     mikail0205#<app_id>
   color:  fc6423
 
 

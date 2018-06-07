@@ -2,9 +2,6 @@
 layout: layout
 comments: true
 ---
-
-{% assign __ = site.data.languages[site.language] %}
-{% include post.html %}
 <script id="dsq-count-scr" src="//mikail0205.disqus.com/count.js" async></script>
 <div id="disqus_thread"></div>
 <script>
@@ -26,3 +23,6 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+{% assign __ = site.data.languages[site.language] %}
+{% include post.html %}

@@ -93,7 +93,7 @@ analytics:
 # Site Author
 author:
   name             : "HyungIn Mikail Choi"
-  avatar           : "/assets/images/bio-photo.jpg
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "KNU_student"
   location         : "Daegu, Korea"
   email            : "mikail0205@gmail.com"

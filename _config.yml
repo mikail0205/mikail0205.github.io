@@ -101,10 +101,10 @@ analytics:
 # Site Author
 author:
   name             : "HyungIn Mikail Choi"
-  avatar           : /assets/images/bio-photo.jpg# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "KNU_student"
   location         : "Daegu, Korea"
-  email            : mikail0205@gmail.com
+  email            : "mikail0205@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :

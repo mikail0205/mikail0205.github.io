@@ -1,4 +1,5 @@
 ---
+layout: post
 comments: true
 title: Machine Learning[머신러닝] Linear regression(선형 회귀)
 description: Linear regression(선형 회귀)에 대한 정리

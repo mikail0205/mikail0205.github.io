@@ -227,6 +227,10 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: mikail0205
 
+github_username:      mikail0205
+linkedin_username:    mikail0205
+facebook_username:    mikail0205
+
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
 avatar: /assets/images/avatar.gif

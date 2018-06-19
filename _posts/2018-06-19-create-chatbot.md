@@ -88,16 +88,16 @@ if __name__ == '__main__':
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/start_command.PNG?raw=true)
 
 ## 멜론 실시간 차트 받아오기
-웹 크롤링으로 멜론 실시간 차트를 받아올 수 있는 기능을 만들어주자. `본인은 modules 디렉토리에 melon_rank.py 파일을 만들었다.`
-
-웹에서 정보를 가져오기 위해서는 `requests` 라이브러리가 필요하다.
+웹 크롤링으로 멜론 실시간 차트를 받아올 수 있는 기능을 만들어주자. 본인은 `modules` 디렉토리에 `melon_rank.py` 파일을 만들었다. 웹에서 정보를 가져오기 위해서는 `requests` 라이브러리가 필요한데
 ```
 $pip install requests
 ```
 pip로 설치하거나 파이참 라이브러리 추가해주면 된다.
 다만 requests만으로는 html을 python이 이해하는 객체 구조로는 만들어주지 못한다. 따라서 `BeautifulSoup`을 이용하게 되는데. 이 라이브러리는 html코드를 python이 이해하는 객체 구조로 변환하는 Parsing을 맡고 있기 때문이다. 마찬가지로 라이브러리 등록을 해준다.
 
-멜론 TOP100 https://www.melon.com/chart/index.htm 에 들어가서 f12를 눌러주면 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/melon_rank.png?raw=true)처럼 정보를 볼 수 있는데, 여기서 원하는 테이블을 찾아서 사용하면 된다.
+멜론 TOP100 https://www.melon.com/chart/index.htm 에 들어가서 f12를 눌러주면 정보를 볼 수 있는데, 여기서 원하는 테이블을 찾아서 사용하면 된다. ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/melon_rank.png?raw=true)
+
+`modules`디렉토리`melon_rank.py`에 코드를 작성해보자.
 
 ```
 from bs4 import BeautifulSoup
@@ -126,22 +126,24 @@ def show_music_rank(self, update):
                               )
 
 ```
-반복문을 사용하지 않은 것은 반복문을 사용하게 되면 그만큼의 메시지 박스가 계속 떠오르기 때문에 불편해도 이렇게 만들었다.
+> 코드작성시 반복문을 사용해도 되지만, 반복문을 사용하지 않은 것은 반복문을 사용하게 되면 그만큼의 메시지 박스가 계속 떠오르기 때문에 불편해도 이렇게 만들었다.
 
 다시 `main.py`로 돌아가서
 ```
 from modules.melon_rank import show_music_rank
 
-# def main(): 안에
+# def main(): 안에다가 추가해준다.
 dp.add_handler(CommandHandler('최신음악',show_music_rank))
 ```
-이렇게 두 줄 추가해주면 된다.
+> 이렇게 두 줄 추가해주면 된다.
+
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/show_music_rank.PNG?raw=true)
-결과적으로 이렇게 하나의 메시지 박스에 담겨져 나온다.
+최종적으로 이렇게 하나의 메시지 박스 안에 담겨 나온다.
 
 
 ## Release note
 2018-06-19: First Update  
 
 ## References
-https://beomi.github.io/2017/01/20/HowToMakeWebCrawler/
+https://beomi.github.io/2017/01/20/HowToMakeWebCrawler/  
+https://python-telegram-bot.org/

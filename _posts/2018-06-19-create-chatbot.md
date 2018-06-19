@@ -14,18 +14,18 @@ tags:
 
 ## Bot father로 부터 내 봇 생성하기
 
-Python으로 Telegram 챗봇을 만들어 보자. 먼저 텔레그램에서 @botfather을 검색한다.
+Python으로 Telegram 챗봇을 만들어 보자. 먼저 텔레그램에서 `@botfather`을 검색한다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/search_botfather_img.PNG?raw=true)
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/whatbotcando.PNG?raw=true)
-이런 메시지를 받게 되는데, /start 명령어를 입력하면 시작할 수 있다.
+이런 메시지를 받게 되는데, `/start` 명령어를 입력하면 시작할 수 있다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/start.PNG?raw=true)
 
-다음으로 /newbot 명령어를 통해 봇을 생성 가능하며, 봇 이름과 사용자 이름까지 입력하면 봇이 생성이 된다.
+다음으로 `/newbot` 명령어를 통해 봇을 생성 가능하며, 봇 이름과 사용자 이름까지 입력하면 봇이 생성이 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/newbot.PNG?raw=true)
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/Inkedhyungin_test_bot_LI.jpg?raw=true)
 그리고 위 이미지에 빨간 줄로 밑줄 그은 부분은 내가 만든 봇의 TOKEN으로 나중에 필요로 한다.
 
-다음으로 봇의 프로필 사진을 바꾸고 싶다면 /setuserpic 명령어를 입력 후 원하는 사진을 올려주면 된다.
+다음으로 봇의 프로필 사진을 바꾸고 싶다면 `/setuserpic` 명령어를 입력 후 원하는 사진을 올려주면 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/change_bot_image.PNG?raw=true)
 
 그럼 최종적으로 이렇게 봇이 만들어지게 된다.
@@ -95,8 +95,10 @@ if __name__ == '__main__':
 $pip install requests
 ```
 pip로 설치하거나 파이참 라이브러리 추가해주면 된다.
-다만 requests만으로는 html을 python이 이해하는 객체 구조로는 만들어주지 못한다. 따라서 `BeautifulSoup`을 이용하게 되는데. 이 라이브러리는 html코드를 python이 이해하는 객체 구조로 변환하는 Parsing을 맡고 있기 때문이다.
-마찬가지로 라이브러리 등록을 해준다.
+다만 requests만으로는 html을 python이 이해하는 객체 구조로는 만들어주지 못한다. 따라서 `BeautifulSoup`을 이용하게 되는데. 이 라이브러리는 html코드를 python이 이해하는 객체 구조로 변환하는 Parsing을 맡고 있기 때문이다. 마찬가지로 라이브러리 등록을 해준다.
+
+멜론 TOP100 https://www.melon.com/chart/index.htm 에 들어가서 f12를 눌러주면 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/melon_rank.png?raw=true)처럼 정보를 볼 수 있는데, 여기서 원하는 테이블을 찾아서 사용하면 된다.
+
 ```
 from bs4 import BeautifulSoup
 import requests
@@ -124,6 +126,18 @@ def show_music_rank(self, update):
                               )
 
 ```
+반복문을 사용하지 않은 것은 반복문을 사용하게 되면 그만큼의 메시지 박스가 계속 떠오르기 때문에 불편해도 이렇게 만들었다.
+
+다시 `main.py`로 돌아가서
+```
+from modules.melon_rank import show_music_rank
+
+# def main(): 안에
+dp.add_handler(CommandHandler('최신음악',show_music_rank))
+```
+이렇게 두 줄 추가해주면 된다.
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/show_music_rank.PNG?raw=true)
+결과적으로 이렇게 하나의 메시지 박스에 담겨져 나온다.
 
 
 ## Release note

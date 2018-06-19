@@ -33,7 +33,7 @@ Python으로 Telegram 챗봇을 만들어 보자. 먼저 텔레그램에서 `@bo
 
 ## 봇 코드 구현
 
-봇을 성공적으로 만들었으니 이제 다음단계로 넘어가보자. PyCharm을 통해 새 프로젝트를 만들어보자. [봇 api로는 python-telegram-bot을 사용했다.] [(참고주소)](https://python-telegram-bot.org/)
+봇을 성공적으로 만들었으니 이제 다음단계로 넘어가보자. PyCharm을 통해 새 프로젝트를 만들고 `main.py`를 만들어보자. [봇 api로는 python-telegram-bot을 사용했다.] [(참고주소)](https://python-telegram-bot.org/)
 
 pip를 이용할 경우에는 이렇게 설치가 가능하다.
 
@@ -91,7 +91,7 @@ if __name__ == '__main__':
 $pip install requests
 ```
 pip로 설치하거나 파이참 라이브러리 추가해주면 된다.
-다만 requests만으로는 html을 python이 이해하는 객체 구조로는 만들어주지 못한다. 따라서 `BeautifulSoup`을 이용하게 되는데. 이 라이브러리는 html코드를 python이 이해하는 객체 구조로 변환하는 Parsing을 맡고 있기 때문이다. 마찬가지로 라이브러리 등록을 해준다.
+다만 requests만으로는 html을 python이 이해하는 객체 구조로는 만들어주지 못한다. 따라서 `BeautifulSoup`을 이용하게 되는데. 이 라이브러리는 html코드를 python이 이해하는 객체 구조로 변환하는 Parsing을 맡고 있기 때문이다. 마찬가지로 라이브러리를 설치 해준다.
 
 멜론 TOP100 https://www.melon.com/chart/index.htm 에 들어가서 f12를 눌러주면 정보를 볼 수 있는데, 여기서 원하는 테이블을 찾아서 사용하면 된다. ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/melon_rank.png?raw=true)
 

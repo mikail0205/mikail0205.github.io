@@ -16,14 +16,12 @@ tags:
 
 Python으로 Telegram 챗봇을 만들어 보자. 먼저 텔레그램에서 @botfather을 검색한다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/search_botfather_img.PNG?raw=true)
-실행하면
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/whatbotcando.PNG?raw=true)
 이런 메시지를 받게 되는데, /start 명령어를 입력하면 시작할 수 있다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/start.PNG?raw=true)
 
-다음으로 /newbot 명령어를 통해 봇을 생성 가능하다.
+다음으로 /newbot 명령어를 통해 봇을 생성 가능하며, 봇 이름과 사용자 이름까지 입력하면 봇이 생성이 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/newbot.PNG?raw=true)
-그렇게 봇의 이름과 사용자명까지 입력하면 봇이 생성이 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/Inkedhyungin_test_bot_LI.jpg?raw=true)
 그리고 위 이미지에 빨간 줄로 밑줄 그은 부분은 내가 만든 봇의 TOKEN으로 나중에 필요로 한다.
 

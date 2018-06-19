@@ -67,7 +67,7 @@ def unknown(bot, update):
 ```
 # main문을 정의하고
 def main():
-    #969896 Create Updater object and attach dispatcher to it
+    #8e908c Create Updater object and attach dispatcher to it
     updater = Updater(token)
     dp = updater.dispatcher
     print("Bot started")

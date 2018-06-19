@@ -48,21 +48,19 @@ PyCharm에서 python-telegram-bot라이브러리를 임포트 해준다.
 프로젝트를 생성했으면
 
 ```
+#import modules
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,)
-
+#My bot token from BotFather
 token = 'Bot father에게 받은 bot token을 넣어준다.'
-```
-```
-# 간단한 커맨드 두가지를 정의해보자
+
+# define command handlers
 def start(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text="봇 작동합니다.")
 
 # 정해진 커맨드가 아닌 다른 명령을 받았을 때 출력할 메시지
 def unknown(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text="죄송하지만 그 명령어를 이해할 수 없습니다.")
-```
 
-```
 # main문을 정의하고
 def main():
     # Create Updater object and attach dispatcher to it

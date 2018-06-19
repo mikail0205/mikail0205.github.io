@@ -1,7 +1,7 @@
 ---
 comments: true
 title: Python으로 Telegram 봇 만들기(1)
-description: Telegram에서 @botfather로 부터 token을 받아와 봇을 생성해보자
+description: Telegram에서 @botfather로 부터 token을 받아와 봇을 생성하고 멜론 차트 받아오기
 date: 2018-06-19
 categories:
  - Python
@@ -88,7 +88,7 @@ if __name__ == '__main__':
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/start_command.PNG?raw=true)
 
 ## 멜론 실시간 차트 받아오기
-웹 크롤링으로 멜론 실시간 차트를 받아올 수 있는 기능을 만들어주자. 본인은 modules 디렉토리에 melon_rank.py 파일을 만들었다.
+웹 크롤링으로 멜론 실시간 차트를 받아올 수 있는 기능을 만들어주자. `본인은 modules 디렉토리에 melon_rank.py 파일을 만들었다.`
 
 웹에서 정보를 가져오기 위해서는 `requests` 라이브러리가 필요하다.
 ```
@@ -144,3 +144,4 @@ dp.add_handler(CommandHandler('최신음악',show_music_rank))
 2018-06-19: First Update  
 
 ## References
+https://beomi.github.io/2017/01/20/HowToMakeWebCrawler/

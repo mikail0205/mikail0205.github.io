@@ -11,8 +11,8 @@ tags:
  - Telegram
  - Chatbot
 ---
-![](https://github.com/python-telegram-bot/logos/blob/master/logo/png/ptb-logo_240.png?raw=true)
-[Image URL](https://github.com/python-telegram-bot/logos/blob/master/logo/png/ptb-logo_240.png?raw=true)
+
+## Bot father로 부터 내 봇 생성하기
 
 Python으로 Telegram 챗봇을 만들어 보자. 먼저 텔레그램에서 @botfather을 검색한다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/search_botfather_img.PNG?raw=true)
@@ -33,7 +33,15 @@ Python으로 Telegram 챗봇을 만들어 보자. 먼저 텔레그램에서 @bot
 그럼 최종적으로 이렇게 봇이 만들어지게 된다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/changed_profile_pic.PNG?raw=true)
 
+## 봇 코드 구현
+
 봇을 성공적으로 만들었으니 이제 다음단계로 넘어가보자. PyCharm을 통해 새 프로젝트를 만들어보자. [봇 api로는 python-telegram-bot을 사용했다.] [(참고주소)](https://python-telegram-bot.org/)
+
+pip를 이용할 경우에는 이렇게 설치가 가능하다.
+
+```
+$pip install python-telegram-bot --upgrade
+```
 
 PyCharm에서 python-telegram-bot라이브러리를 임포트 해준다. 
 (Ctrl + alt + s입력 한뒤 추가할 수 있다.)
@@ -57,6 +65,7 @@ def unknown(bot, update):
 ```
 
 ```
+# main문을 정의하고
 def main():
     # Create Updater object and attach dispatcher to it
     updater = Updater(token)
@@ -75,7 +84,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
+telegram.ext는 여러 클래스로 구성되어 있지만 가장 중요한 요소가 Updater와 Dispatcher인데 Updater클래스는 telegram에서 새 업데이트는 계속 자겨와서 Dispatcher 클래스에 전달한다. Updater 오브젝트를 작성하면 Dispatcher가 작성되어 대기열과 함께 링크되며, Dispatcher에 등록된 핸들러에 따라 Updater에서 가져온 업데이트를 정렬하고 정의한 콜백 함수로 전달하는 다양한 유형의 핸들러를 등록할 수 있다.
 
 
 ## Release note

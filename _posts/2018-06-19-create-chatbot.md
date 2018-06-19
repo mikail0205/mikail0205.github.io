@@ -1,7 +1,7 @@
 ---
 comments: true
 title: Python으로 Telegram 봇 만들기(1)
-description: 파이썬으로 챗봇 만들기
+description: Telegram에서 @botfather로 부터 token을 받아와 봇을 생성해보자
 date: 2018-06-19
 categories:
  - Python
@@ -86,6 +86,44 @@ if __name__ == '__main__':
 
 코드를 잘 붙여넣었다면 아래와 같이 잘 작동할 것이다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/start_command.PNG?raw=true)
+
+## 멜론 실시간 차트 받아오기
+웹 크롤링으로 멜론 실시간 차트를 받아올 수 있는 기능을 만들어주자. 본인은 modules 디렉토리에 melon_rank.py 파일을 만들었다.
+
+웹에서 정보를 가져오기 위해서는 `requests` 라이브러리가 필요하다.
+```
+$pip install requests
+```
+pip로 설치하거나 파이참 라이브러리 추가해주면 된다.
+다만 requests만으로는 html을 python이 이해하는 객체 구조로는 만들어주지 못한다. 따라서 `BeautifulSoup`을 이용하게 되는데. 이 라이브러리는 html코드를 python이 이해하는 객체 구조로 변환하는 Parsing을 맡고 있기 때문이다.
+마찬가지로 라이브러리 등록을 해준다.
+```
+from bs4 import BeautifulSoup
+import requests
+
+def show_music_rank(self, update):
+    header = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko'}
+    addr = 'https://www.melon.com/chart/index.htm'
+    self.addr = addr
+    melon = requests.get(self.addr, headers = header)
+    soup = BeautifulSoup(melon.text, 'html.parser')
+
+    titles = soup.select('#lst50 > td > div > div > div.ellipsis.rank01 > span > a')
+    artist = soup.select('#lst50 > td > div > div > div.ellipsis.rank02 > span')
+    update.message.reply_text('실시간 멜론 차트\n'
+                              + '1위: ' + titles[1].text + " - " + artist[1].text + '\n'
+                              + '2위: ' + titles[2].text + " - " + artist[2].text + '\n'
+                              + '3위: ' + titles[3].text + " - " + artist[3].text + '\n'
+                              + '4위: ' + titles[4].text + " - " + artist[4].text + '\n'
+                              + '5위: ' + titles[5].text + " - " + artist[5].text + '\n'
+                              + '6위: ' + titles[6].text + " - " + artist[6].text + '\n'
+                              + '7위: ' + titles[7].text + " - " + artist[7].text + '\n'
+                              + '8위: ' + titles[8].text + " - " + artist[8].text + '\n'
+                              + '9위: ' + titles[9].text + " - " + artist[9].text + '\n'
+                              + '10위: ' + titles[10].text + " - " + artist[10].text + '\n'
+                              )
+
+```
 
 
 ## Release note

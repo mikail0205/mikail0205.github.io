@@ -41,8 +41,8 @@ pip를 이용할 경우에는 이렇게 설치가 가능하다.
 $pip install python-telegram-bot --upgrade
 ```
 
-PyCharm에서 python-telegram-bot라이브러리를 임포트 해준다. 
-(Ctrl + alt + s입력 한뒤 추가할 수 있다.)
+PyCharm에서 python-telegram-bot라이브러리를 임포트 해준다.
+`Ctrl + alt + s`입력 후 녹색 +를 눌러 추가할 수 있다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/import_library.PNG?raw=true)
 
 프로젝트를 생성했으면

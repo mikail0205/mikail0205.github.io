@@ -65,7 +65,7 @@ def unknown(bot, update):
 ```
 # main문을 정의하고
 def main():
-    #8e908c Create Updater object and attach dispatcher to it
+    # Create Updater object and attach dispatcher to it
     updater = Updater(token)
     dp = updater.dispatcher
     print("Bot started")
@@ -82,7 +82,7 @@ def main():
 if __name__ == '__main__':
     main()
 ```
->telegram.ext는 여러 클래스로 구성되어 있지만 가장 중요한 요소가 Updater와 Dispatcher인데 Updater클래스는 telegram에서 새 업데이트는 계속 자겨와서 Dispatcher 클래스에 전달한다. Updater 오브젝트를 작성하면 Dispatcher가 작성되어 대기열과 함께 링크되며, Dispatcher에 등록된 핸들러에 따라 Updater에서 가져온 업데이트를 정렬하고 정의한 콜백 함수로 전달하는 다양한 유형의 핸들러를 등록할 수 있다.
+>telegram.ext는 여러 클래스로 구성되어 있지만 가장 중요한 요소가 Updater와 Dispatcher인데 Updater클래스는 telegram에서 새 업데이트는 계속 가져와서 Dispatcher 클래스에 전달한다. Updater 오브젝트를 작성하면 Dispatcher가 작성되어 대기열과 함께 링크되며, Dispatcher에 등록된 핸들러에 따라 Updater에서 가져온 업데이트를 정렬하고 정의한 콜백 함수로 전달하는 다양한 유형의 핸들러를 등록할 수 있다.
 
 코드를 잘 붙여넣었다면 아래와 같이 잘 작동할 것이다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/creation/start_command.PNG?raw=true)

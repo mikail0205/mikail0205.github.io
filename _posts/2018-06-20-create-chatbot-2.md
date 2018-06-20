@@ -18,9 +18,9 @@ tags:
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/part2/naver_weather.png?raw=true)
 물론 여기선 모든 도시별 날씨가 나오지만 이걸 다 받을 필요는 없고, 우리가 궁금한 도시의 날씨만 받을 수 있도록 하자.
 
-도시별로 번호가 지정되어 있기때문에 `http://weather.naver.com/rgn/cityWetrCity.nhn?cityRgnCd=CT + 도시번호`를 하게 되면 해당하는 도시의 날씨가 나온다. 따라서 `command` 입력후에 뒤 따라오는 도시명으로 그 도시의 날씨를 검색할 수 있도록 하는 것.
+도시별로 번호가 지정되어 있기 때문에 `http://weather.naver.com/rgn/cityWetrCity.nhn?cityRgnCd=CT + 도시번호`를 하게 되면 해당하는 도시의 날씨가 나온다. 따라서 `command` 입력 후에 뒤따라오는 도시명으로 그 도시의 날씨를 검색할 수 있도록 하는 것.
 
-지역번호는 이런식으로 되어있다.
+지역번호는 이런 식으로 되어있다.
 `'강릉': "004001", '강원': "004002", '산간': "004003", '고성': "004004", '대관령': "004005",
         '동해': "004006", '삼척': "004007", '새말': "004011", '속초': "004007", '양양': "004008",
         '태백': "004009",`
@@ -38,7 +38,7 @@ from uuid import uuid4
 ### uuid
 uuid는 어떤 데이터를 고유하게 식별하는데 사용되는 128비트 길이의 숫자이며 32개의 16진수로 구성되고 5개의 그룹으로 표시되어 있다. 그리고 여기서는 도시명을 입력받고 그것을 식별하는데 사용할 것이다.
 
-지난번 멜론 순위를 받아올 때와는 다르게, 이번에는 사용자가 원하는 도시의 날씨를 받아야하기 때문에, 사용자 입력을 받을 수 있도록 , `user_data`를 추가하였다.
+지난번 멜론 순위를 받아올 때와는 다르게, 이번에는 사용자가 원하는 도시의 날씨를 받아야 하기 때문에, 사용자 입력을 받을 수 있도록, `user_data`를 추가하였다.
 ```
 def weather(self, update, user_data):
     session = requests.Session()
@@ -125,7 +125,7 @@ def weather(self, update, user_data):
         + "\t오후 : " + t_ary[25] + "℃(" + t_ary[27] + ", 강수확률 " + t_ary[29] + ")\n"
     )
 ```
-그리고 `main.py`에 아래코드를 추가하면 끝이난다.
+그리고 `main.py`에 아래 코드를 추가하면 끝이 난다.
 ```
 from modules.naver_weather import weather
 dp.add_handler(CommandHandler('날씨', weather, pass_user_data=True))
@@ -133,7 +133,7 @@ dp.add_handler(CommandHandler('날씨', weather, pass_user_data=True))
 결과
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/part2/search_weather_img.PNG?raw=true)
 
-필요하면 주간날씨를 받아오도록 코드를 작성해봐도 될 것이다.
+필요하면 주간 날씨를 받아오도록 코드를 작성해봐도 될 것이다.
 
 
 ## Release note

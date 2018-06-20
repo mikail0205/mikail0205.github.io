@@ -133,24 +133,8 @@ dp.add_handler(CommandHandler('날씨', weather, pass_user_data=True))
 결과
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/part2/search_weather_img.PNG?raw=true)
 
-필요하면 주간날씨 역시 받아올 수 있다.
-```
-table2 = soup.find(class_="tbl_weather tbl_today4")
-t2_ary = list(table2.stripped_strings)
-update.message.reply_text(
-	"\n[" + self.area + " 주간 날씨]\n"
-	+ "\t" + t2_ary[1] + t2_ary[2] + "\n(오전: " + t2_ary[4] + "℃ " + t2_ary[6] + ",오후 " + t2_ary[8] + "℃" + t2_ary[
-    10] + ")\n"
-	+ "\t" + t2_ary[11] + t2_ary[12] + "\n(오전: " + t2_ary[14] + "℃ " + t2_ary[16] + ",오후 " + t2_ary[18] + "℃" + t2_ary[
-    20] + ")\n"
-	+ "\t" + t2_ary[21] + t2_ary[22] + "\n(오전: " + t2_ary[24] + "℃ " + t2_ary[26] + ",오후 " + t2_ary[28] + "℃" + t2_ary[
-    30] + ")\n"
-	+ "\t" + t2_ary[31] + t2_ary[32] + "\n(오전: " + t2_ary[34] + "℃ " + t2_ary[36] + ",오후 " + t2_ary[38] + "℃" + t2_ary[
-    40] + ")\n"
-	+ "\t" + t2_ary[41] + t2_ary[42] + "\n(오전: " + t2_ary[44] + "℃ " + t2_ary[46] + ",오후 " + t2_ary[48] + "℃" + t2_ary[
-    50] + ")\n"
-)
-```
+필요하면 주간날씨를 받아오도록 코드를 작성해봐도 될 것이다.
+
 
 ## Release note
 2018-06-20: First Upload

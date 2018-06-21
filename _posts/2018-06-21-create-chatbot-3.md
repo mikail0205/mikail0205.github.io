@@ -18,7 +18,7 @@ tags:
 F12를 눌러서 찾고자 하는 정보를 찾아 따라 내려가다 보면 저렇게 영화 제목과 별점 등을 찾을 수 있다. 여기서는 제목과 해당 영화의 링크만을 받아와서 출력할 것이다.
 
 ## 코드
-
+`naver_movie_rank.py`
 ``` python
 from bs4 import BeautifulSoup
 import requests
@@ -43,6 +43,12 @@ def show_ranklist(self, update):
             break
 ```
 지난번에는 반복문을 쓰지 않고 했었는데, 반복문을 사용하면 이렇게 메시지 박스가 여러 개가 등장하기 때문이다.
+
+`main.py`
+``` python
+from modules.naver_movie_rank import show_ranklist
+dp.add_handler(CommandHandler('영화순위', show_ranklist))
+```
 
 처음 코드를 작성할 때는 영화 제목뿐 아니라 각종 평점과 장르, 상영시간 등 많은 정보를 받아오려고 했었지만, 그냥 순위만 받아와서 링크를 달아주고 보는 사람이 관심 있는 영화 링크 따라가서 보는 게 더 좋지 않을까 싶어서 제목과 링크 두 가지만 받아왔다.
 

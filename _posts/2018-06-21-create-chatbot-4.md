@@ -19,6 +19,7 @@ tags:
 네이버 검색어를 크롤링 해보도록 하자. 찾아보니 `area_hotkeyword PM_CL_realtimekeyword_rolling_base` `div`안에 `ul`이 있고 그 안에 `ah_item`라는 이름으로 `li`들이 있으며 또 그 안에 `ah_r`인 순위 클래스와 `ah_k` 키워드 클래스가 들어있다.
 
 ## 코드
+`naver_issues.py`
 ``` python
 import requests
 from bs4 import BeautifulSoup
@@ -29,17 +30,22 @@ def issue(self, update):
     self.addr = addr
     req = session.get(self.addr)
     soup = BeautifulSoup(req.text, 'html.parser')
-    '''
-    보통은 이런식으로 반복문을 많이 사용하지만, telegram 챗봇에서 반복문을 사용하면 그만큼 메시지 박스가 생성이 되는데 한두개면 괜찮을지 모르지만 계속 늘어나면 보기 불편하다.
+    # 보통은 이런식으로 반복문을 많이 사용하지만, 반복문을 사용하면 메신저에서는 그만큼 메시지 박스가 생성이 되는데 한두개면 괜찮을지 모르지만 계속 늘어나면 보기 불편하다.
     for item in soup.find("div", {"class": "ah_roll_area PM_CL_realtimeKeyword_rolling"}).findAll("li", {
         "class": "ah_item"}):
         count = item.find("span", {"class": "ah_r"}).getText()
         title = item.find("span", {"class": "ah_k"}).getText()
-       # update.message.reply_text("{0}위는 '{1}'입니다".format(count, title))
-    '''
+        update.message.reply_text("{0}위는 '{1}'입니다".format(count, title))
+
+```
+`main.py`
+``` python
+# 메인에 추가해준다.
+from modules.naver_issues import issue
+dp.add_handler(CommandHandler('인기검색', issue))
 ```
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/part4/for.PNG?raw=true)
-메신저에서 이렇게 보기면 너무 불편하다.
+
 
 ``` python
     # 그래서 조금 귀찮은 일이지만, 이런식으로 하나의 메시지 박스에 출력을 해주면 보기엔 좋다.

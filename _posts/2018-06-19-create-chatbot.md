@@ -1,6 +1,6 @@
 ---
 comments: true
-title: Python으로 Telegram 봇 만들기(1) : 봇 생성과 멜론 차트 받아오기
+title: Python으로 Telegram 봇 만들기(1) - 봇 생성과 멜론 차트 받아오기
 description: Telegram에서 @botfather에게 token을 받아와 봇을 생성하고 멜론 차트 받아오기
 date: 2018-06-19
 categories:

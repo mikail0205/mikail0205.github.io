@@ -29,7 +29,7 @@ tags:
 ## 코드
 
 `naver_weather.py`를 만들고 임포트 해주자
-```
+``` python
 import requests
 from bs4 import BeautifulSoup
 from uuid import uuid4
@@ -39,7 +39,7 @@ from uuid import uuid4
 uuid는 어떤 데이터를 고유하게 식별하는데 사용되는 128비트 길이의 숫자이며 32개의 16진수로 구성되고 5개의 그룹으로 표시되어 있다. 그리고 여기서는 도시명을 입력받고 그것을 식별하는데 사용할 것이다.
 
 지난번 멜론 순위를 받아올 때와는 다르게, 이번에는 사용자가 원하는 도시의 날씨를 받아야 하기 때문에, 사용자 입력을 받을 수 있도록, `user_data`를 추가하였다.
-```
+``` python
 def weather(self, update, user_data):
     session = requests.Session()
     addr = "http://weather.naver.com/rgn/cityWetrCity.nhn?cityRgnCd=CT"
@@ -126,7 +126,7 @@ def weather(self, update, user_data):
     )
 ```
 그리고 `main.py`에 아래 코드를 추가하면 끝이 난다.
-```
+``` python
 from modules.naver_weather import weather
 dp.add_handler(CommandHandler('날씨', weather, pass_user_data=True))
 ```

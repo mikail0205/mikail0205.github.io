@@ -47,7 +47,7 @@ PyCharm에서 python-telegram-bot라이브러리를 임포트 해준다.
 
 프로젝트를 생성했으면
 
-```
+``` python
 #import modules
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,)
 #My bot token from BotFather
@@ -97,7 +97,7 @@ pip로 설치하거나 파이참 라이브러리 추가해주면 된다.
 
 `modules`디렉토리`melon_rank.py`에 코드를 작성해보자.
 
-```
+``` python
 from bs4 import BeautifulSoup
 import requests
 
@@ -127,7 +127,7 @@ def show_music_rank(self, update):
 > 코드작성시 반복문을 사용해도 되지만, 반복문을 사용하지 않은 것은 반복문을 사용하게 되면 그만큼의 메시지 박스가 계속 떠오르기 때문에 불편해도 이렇게 만들었다.
 
 다시 `main.py`로 돌아가서
-```
+``` python
 from modules.melon_rank import show_music_rank
 
 # def main(): 안에다가 추가해준다.

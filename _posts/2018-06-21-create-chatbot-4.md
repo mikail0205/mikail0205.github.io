@@ -30,7 +30,7 @@ def issue(self, update):
     self.addr = addr
     req = session.get(self.addr)
     soup = BeautifulSoup(req.text, 'html.parser')
-    # 보통은 이런식으로 반복문을 많이 사용하지만, 반복문을 사용하면 메신저에서는 그만큼 메시지 박스가 생성이 되는데 한두개면 괜찮을지 모르지만 계속 늘어나면 보기 불편하다.
+    # 보통은 이런 식으로 반복문을 많이 사용하지만, 반복문을 사용하면 메신저에서는 그만큼 메시지 박스가 생성이 되는데 한두 개면 괜찮을지 모르지만 계속 늘어나면 보기 불편하다.
     for item in soup.find("div", {"class": "ah_roll_area PM_CL_realtimeKeyword_rolling"}).findAll("li", {
         "class": "ah_item"}):
         count = item.find("span", {"class": "ah_r"}).getText()
@@ -48,7 +48,7 @@ dp.add_handler(CommandHandler('인기검색', issue))
 
 
 ``` python
-    # 그래서 조금 귀찮은 일이지만, 이런식으로 하나의 메시지 박스에 출력을 해주면 보기엔 좋다.
+    # 그래서 조금 귀찮은 일이지만, 이런 식으로 하나의 메시지 박스에 출력을 해주면 보기엔 좋다.
     table = soup.find(class_='ah_l')
     t_ary = list(table.stripped_strings)
     update.message.reply_text('실시간 네이버 인기검색어\n'
@@ -61,7 +61,7 @@ dp.add_handler(CommandHandler('인기검색', issue))
 
 ```
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/telegrambot/part4/onetime.PNG?raw=true)
-코드 작성은 조금 귀찮지만, 메신저에서 보기엔 편하다.
+코드 작성은 조금 귀찮지만, 텔레그램에서 보기엔 편하다.
 
 
 ## Release note

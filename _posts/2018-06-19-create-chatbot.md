@@ -50,6 +50,11 @@ PyCharm에서 python-telegram-bot라이브러리를 임포트 해준다.
 ``` python
 #import modules
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,)
+import logging
+
+# Enable logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
 #My bot token from BotFather
 token = 'Bot father에게 받은 bot token을 넣어준다.'
 

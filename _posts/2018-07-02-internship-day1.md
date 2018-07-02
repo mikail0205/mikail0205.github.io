@@ -8,7 +8,7 @@ categories:
 
 tags:
  - Life insurance
- - 
+
 ---
 
 ## 생명보험의 의의와 역사

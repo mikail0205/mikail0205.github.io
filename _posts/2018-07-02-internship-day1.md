@@ -229,7 +229,6 @@ tags:
 
 자료: 통계청, 2014 고령자 통계
 
-
 ## Release note
 2018-07-02: First Upload
 ## References

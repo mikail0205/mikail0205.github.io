@@ -18,7 +18,7 @@ tags:
 
 학습내용은 제1편 생명보험과 제3보험 공통, 제2편 생명보험, 제3편 제3보험을 공부하였다. 비 전공자의 입장으로 시험자체는 어렵지는 않았지만, 단어하나하나가 생소하기도 해서 그 부분에서 어려움이 있었다고 생각을 한다. 나를 제외한 다른 학우들은 보다 높은 평균성적을 기록하였다.
 
-![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/samsung_intern/%EC%83%9D%EB%AA%85%EB%B3%B4%ED%97%98%EC%84%A4%EA%B3%84%EC%82%AC_%ED%95%A9%EA%B2%A9%EC%A6%9D.png?raw=true)
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/samsung_intern/%EC%83%9D%EB%AA%85%EB%B3%B4%ED%97%98%EC%84%A4%EA%B3%84%EC%82%AC_%ED%95%A9%EA%B2%A9%EC%A6%9D.jpg?raw=true)
 
 
 ## 2주차

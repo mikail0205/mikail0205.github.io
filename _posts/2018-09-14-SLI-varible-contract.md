@@ -26,5 +26,11 @@ tags:
 ### 현실로 다가온 인생 100세 시대, 몸이 건강해야 노후가 편안하다.
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/variable.jpg?raw=true)
 
+실손의료보험은 본인이 부담하는 의료비를 폭넓게 보장합니다.(약관상 규정된 공제금액은 제외)
 
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/range.jpg?raw=true)
+
+>급여: 보험급여 원리에 부합되는 의료비용으로, 질병치료에 필요하고 보편적으로 시술되는 경우를 의미. 본인부담으로 구성됨.
+
+>비급여: 국민건강보험에서 보장하지 않는 부분으로 본인이 전액 부담하는 부분, 업무 또는 일상생활에 지장이 없는 경우, 신체의 필수 기능개선 목적이 아닌 경우, 예방진료, 보험급여 시책상 요양급여로 인정하기 어려운 경우 등에 대한 치료행위, 약제 및 치료재료 등을 의미.
 

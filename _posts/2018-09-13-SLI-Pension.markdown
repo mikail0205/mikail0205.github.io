@@ -8,7 +8,7 @@ categories:
  - SLI
 
 tags:
- - Pension
+ - Insurance
 ---
 
 ## 연금

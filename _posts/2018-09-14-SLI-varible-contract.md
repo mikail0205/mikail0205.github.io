@@ -22,3 +22,9 @@ tags:
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/rate.jpg?raw=true)
 
 큰 병을 치료하는 의료비는 건강보험만으로는 부족할 수 있으며 국민 1인당 평생의료비가 1억원이 넘어서고 있다. 게다가 경제적인 문제로 치료를 포기하는 환자가 연간 360만명 수준에 달한다. [국민건강통계 2013]
+
+### 현실로 다가온 인생 100세 시대, 몸이 건강해야 노후가 편안하다.
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/variable.jpg?raw=true)
+
+
+

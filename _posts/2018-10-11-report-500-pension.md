@@ -8,6 +8,7 @@ categories:
 
 tags:
  - Pension
+
 ---
 
 ## 연금, 아는 만큼 보인다.
@@ -21,7 +22,7 @@ tags:
 
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/book%20report/pension.png?raw=true)
 
-(참조: 행복한 100년 플랜_삼성생명 은퇴연구소)
+> (참조: 행복한 100년 플랜_삼성생명 은퇴연구소)
 
 직업별로 가입할 수 있는 연금상품에는 차이가 있다. 연금부자가 되려면 본인이 가입할 수 있는 연금에 대해서 확실히 알아두는 것이 좋다.
 

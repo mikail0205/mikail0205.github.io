@@ -8,6 +8,7 @@ categories:
 
 tags:
  - Pension
+ - Insurance
 
 ---
 
@@ -27,6 +28,8 @@ tags:
 직업별로 가입할 수 있는 연금상품에는 차이가 있다. 연금부자가 되려면 본인이 가입할 수 있는 연금에 대해서 확실히 알아두는 것이 좋다.
 
 ### 직업별 가입 가능 연금상품
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/book%20report/%EC%A7%81%EC%97%85%EB%B3%84%20%EA%B0%80%EC%9E%85%20%EA%B0%80%EB%8A%A5%20%EC%97%B0%EA%B8%88%EC%83%81%ED%92%88.png?raw=true)
+
 
 ## Release note
 2018-10-11: First Upload

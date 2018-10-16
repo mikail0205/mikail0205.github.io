@@ -182,6 +182,10 @@ IRP가 필요한 이유는 목돈으로 지급받은 퇴직금을 노후에 연�
 
 주택연금을 신청한 주택의 평균가격은 약 2억 8,600만 원이며, 평균 월 수령액은 99만 원이다. 주택연금 가입자는 빠른 속도로 늘어나고 있으며 2016년 말 기준으로 4만 명에 육박한다.
 
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/book%20report/%EC%9A%B0%EB%A6%AC%EB%82%98%EB%9D%BC%20%EC%A3%BC%ED%83%9D%EC%97%B0%EA%B8%88%20%EB%88%84%EC%A0%81%20%EA%B0%80%EC%9E%85%EC%9E%90%20%EC%88%98.png?raw=true)
+
+
+
 
 
 ## Release note

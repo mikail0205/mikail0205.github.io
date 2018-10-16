@@ -38,6 +38,8 @@ tags:
 
 우리는 '황금알을 낳는 거위'를 키워야 한다. 황금알을 낳기 시작하면 그때부터는 돈 걱정 없는 노후를 보낼 수 있다. 그때까지 거위를 잘 키워야 하고 절대로 당장의 욕심에 눈이 멀어 거위의 배를 갈라서는 안 된다. 배를 가르는 순간 우리의 노후도 갈라질 것이다.
 
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/book%20report/%EC%9D%80%ED%87%B4%20%ED%9B%84%20%EC%83%9D%ED%99%9C%EC%88%98%EC%A4%80%20%EC%98%88%EC%8B%9C.jpg?raw=true)
+
 
 
 

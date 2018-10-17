@@ -31,11 +31,16 @@ tags:
 
 그 외는 자신이 청약하는 아파트 성격마다 가산점 조건이 다르다. 젊은 사람일 수록 엄청나게 불리한데, 2015년 기준 그나마 여전히 분양물량의 30 ~ 60% 정도는 추첨으로 배분이 되고 있다. 그러나 추첨분은 줄어드는 추세라 2015년 기준 0 ~ 18세 미성년자들은 가면 갈 수록 분양으로 아파트 따기가 어려워지고 있다
 
-![]()
+## 소득공제
 
-![]()
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/%EC%A3%BC%ED%83%9D%EC%B2%AD%EC%95%BD/%EC%86%8C%EB%93%9D%EA%B3%B5%EC%A0%9C.png?raw=true)
+
+
+## 청약예치금
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/%EC%A3%BC%ED%83%9D%EC%B2%AD%EC%95%BD/%EC%B2%AD%EC%95%BD%EC%98%88%EC%B9%98%EA%B8%88%20%EA%B8%B0%EC%A4%80.png?raw=true)
 
 ## Release note
-2018-10-11: First Upload
+2018-10-17: First Upload
 
 ## References
+- 우리은행 https://spot.wooribank.com/pot/Dream?withyou=PODEP0022&cc=c007095:c009166;c012263:c012399&PLM_PDCD=P010002293&PRD_CD=P010002293&ALL_GB=&depKind=A05

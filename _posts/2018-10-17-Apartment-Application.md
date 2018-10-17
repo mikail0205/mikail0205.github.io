@@ -43,4 +43,4 @@ tags:
 2018-10-17: First Upload
 
 ## References
-- 우리은행 https://spot.wooribank.com/pot/Dream?withyou=PODEP0022&cc=c007095:c009166;c012263:c012399&PLM_PDCD=P010002293&PRD_CD=P010002293&ALL_GB=&depKind=A05
+- [우리은행] <https://spot.wooribank.com/pot/Dream?withyou=PODEP0022&cc=c007095:c009166;c012263:c012399&PLM_PDCD=P010002293&PRD_CD=P010002293&ALL_GB=&depKind=A05>

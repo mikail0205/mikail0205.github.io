@@ -36,6 +36,9 @@ tags:
 
 ![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/%EC%A3%BC%ED%83%9D%EC%B2%AD%EC%95%BD/%EC%B2%AD%EC%95%BD%EC%98%88%EC%B9%98%EA%B8%88%EA%B8%B0%EC%A4%80.jpg?raw=true)
 
+## 청약순위
+![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/%EC%A3%BC%ED%83%9D%EC%B2%AD%EC%95%BD/%EC%B2%AD%EC%95%BD%EC%88%9C%EC%9C%84.jpg?raw=true)
+
 ## Release note
 2018-10-17: First Upload
 

@@ -2,7 +2,7 @@
 comments: true
 image:
 title: 라틴어 문장 수업 서론
-description:
+description: 라틴어를 배우면 좋은점 ?
 date: 2018-10-26
 categories:
  - Languages

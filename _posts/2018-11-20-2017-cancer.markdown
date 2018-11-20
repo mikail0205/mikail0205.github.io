@@ -3,7 +3,7 @@ comments: true
 image:
 title: 2017년 암 사망 통계
 description: 2017년 암 사망 통계
-date: 2018-09-13
+date: 2018-11-20
 categories:
  - SLI
 

@@ -4,7 +4,7 @@ title: 주택청약종합저축
 description: 주택청약종합저축
 date: 2018-10-17
 categories:
- - SLI
+ - Finance & Insurance
 
 tags:
 - Deposit

@@ -4,7 +4,7 @@ title: 2018 삼성생명 현장실습
 description: 삼성생명 현장실습
 date: 2018-07-10
 categories:
- - Intern
+ - Experiences
 
 tags:
  - Internship

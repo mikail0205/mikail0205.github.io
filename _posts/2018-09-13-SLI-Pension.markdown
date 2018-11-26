@@ -5,7 +5,7 @@ title: 연금보험에 대하여
 description: 노후 준비를 위하여 연금의 필요성과 그 이해를 돕기 위한 글
 date: 2018-09-13
 categories:
- - SLI
+ - Finance & Insurance
 
 tags:
  - Insurance

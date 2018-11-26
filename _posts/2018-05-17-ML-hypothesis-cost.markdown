@@ -2,12 +2,11 @@
 title: Machine Learning[머신러닝] Hypothesis, cost
 description: 머신러닝에 대한 hypothesis와 cost에 대한 정리
 categories:
- - Machine Learning
+ - Computer Science
+
 tags:
  - Machine Learning
-sitemap :
-  changefreq : daily
-  priority : 1.0
+
 ---
 
 ## Hypothesis (가설)

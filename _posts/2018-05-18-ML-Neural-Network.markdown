@@ -2,12 +2,11 @@
 title: Machine Learning[머신러닝] Neural Network
 description: Neural Network(인공신경망)에 대한 정리
 categories:
- - Machine Learning
+ - Computer Science
+
 tags:
  - Machine Learning
-sitemap :
-  changefreq : daily
-  priority : 1.0
+
 ---
 
 

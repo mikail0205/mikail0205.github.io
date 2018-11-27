@@ -19,21 +19,21 @@ tags:
 80세 이상 노인 사망자수는 12만 7,801명 급증 하였으며 전체에서 44.8%를 차지한다. 1일 평균 782명이 사망한다고 볼 수 있으며 전 연령층에서 남자사망률이 높고 50대가 2.9배로 가장 높다.
 
 
-![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/2017%20%EC%A3%BC%EC%9A%94%20%EC%82%AC%EB%A7%9D%EC%9B%90%EC%9D%B8.png?raw=true)
+<img src = "https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/2017%20%EC%A3%BC%EC%9A%94%20%EC%82%AC%EB%A7%9D%EC%9B%90%EC%9D%B8.png?raw=true" class = "fit image">
 
 ### 전체 암 사망률
 
-![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/2017%20%EC%95%94%20%EC%82%AC%EB%A7%9D%EB%A5%A0.png?raw=true)
+<img src = "https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/2017%20%EC%95%94%20%EC%82%AC%EB%A7%9D%EB%A5%A0.png?raw=true" class = "fit image">
 
 ### 평균 암 치료비
 
-![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/%ED%8F%89%EA%B7%A0%20%EC%95%94%20%EC%B9%98%EB%A3%8C%EB%B9%84,%20%EC%84%B1%EB%B3%84%20%EC%95%94%EC%82%AC%EB%A7%9D%20%EC%88%9C%EC%9C%84.png?raw=true)
+<img src = "https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/%ED%8F%89%EA%B7%A0%20%EC%95%94%20%EC%B9%98%EB%A3%8C%EB%B9%84,%20%EC%84%B1%EB%B3%84%20%EC%95%94%EC%82%AC%EB%A7%9D%20%EC%88%9C%EC%9C%84.png?raw=true" class = "fit image">
 
 폐암은 증상이 나타나면 이미 많이 진행된 상태이다. 따라서 폐암은 조기진단이 어렵다. 최근 좋은 치료법이 등장하였지만 비용도 만만치 않기 때문에 일반 환자들은 경제적 부담이 너무 크다.
 
 ### 시도별 사망원인 비교
 
-![](https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/%EC%8B%9C%EB%8F%84%EB%B3%84%20%EC%82%AC%EB%A7%9D%EC%9B%90%EC%9D%B8%20%EC%B5%9C%EB%8C%80,%20%EC%B5%9C%EC%86%8C.png?raw=true)
+<img src = "https://github.com/mikail0205/mikail0205.github.io/blob/master/assets/images/2018/SLI/%EC%8B%9C%EB%8F%84%EB%B3%84%20%EC%82%AC%EB%A7%9D%EC%9B%90%EC%9D%B8%20%EC%B5%9C%EB%8C%80,%20%EC%B5%9C%EC%86%8C.png?raw=true" class = "fit image"> 
 
 ## 세대별 항암제 비교
 

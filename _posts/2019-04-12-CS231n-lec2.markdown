@@ -1,0 +1,80 @@
+---
+comments: true
+title: CS231n Lec02 Image Classification pipeline [번역]
+description: Youtube 온라인 강의 CS231n에 대한 번역
+date: 2019-04-12
+categories:
+ - Computer Science
+
+tags:
+ - Computer Vision
+ - Machine Learning
+ - CS231n
+
+---
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/OoUX-nOEjG0' frameborder='0' allowfullscreen></iframe></div>
+
+---
+
+## Welcome to lecture two of CS231N.
+수업 전에 몇 가지 안내하는 내용이므로 안 읽어도 무관함
+지난 강의에서 우리는 컴퓨터 비전, 역사, 수업의 개요가 무엇인지에 대한 큰 그림을 보았고 오늘은 처음으로 세부 사항에 들어가서 학습 알고리즘의 일부가 실제로 실제로 어떻게 작동하는지 훨씬 더 깊이 알게 될 것입니다. 
+
+지난 첫 강의는 일종의 비전(Vision)에 대한 가장 큰 그림이었고 이 수업의 대부분의 강의는 보다 세부적인 방향으로 이루어질 것이며, 다양한 알고리즘의 특정 메커니즘에 훨씬 더 집중할 것입니다. 오늘 우리의 첫 번째 학습 알고리즘을 보게 될 것이지만 그전에 몇 가지 행정 문제에 대해 이야기하고 싶습니다.
+
+1. 첫 번째는 피아자(Piazza)인데
+어제 보니 피아자에 500여 명이 등록한 것처럼 보였는데. 그 말은 즉, 아직도 수백 명이 등록 하지 않았다는 것입니다. 우리는 피아자가 학생들과 스태프들 간의 주 의사소통 수단이 되기를 정말로 원하며 프로젝트 아이디어, 중간 출석 또는 포스터 세션 출석과 같은 질문들은 반드시 피아자에서 확인해야 합니다. 그리고 모든 TA들이 확인하기 때문에 피아자에 있는 질문들은 답변을 더 빨리 얻을 수 있습니다.
+
+그리고 코스 목록에 있는 이메일로 메일을 보내면 섞이기 쉽습니다. SCPD 학생들 중 일부가 Piazza에 등록하는 데 약간의 어려움을 겪고 있음을 알게 되었는데. SCPD 학생들은 반드시 @stanford. edu 이메일 주소를 받도록 되어있기 때문에 이메일 주소를 받으면 스탠퍼드 이메일을 사용하여 피아자에 로그인할 수 있고 아마 SCPD를 듣는 학생들이 지금 방에 앉아있는 사람들에게는 영향을 주진 않을 것입니다. 
+
+2. 다음 문제는 과제 1에 관한 것인데.
+과제는 오늘 오후 언젠가는 업로드됩니다만 밤 잠자리에 들기 전에는 올라갈 것을 약속합니다. 그러나 당장 작업하기를 원한다면 작년 버전의 과제물을 보면 되는데 내용은 거의 동일합니다. 예를 들어 Python 2.7보다는 Python 3에서 작동하도록 업그레이드하는 것과 같이 조금 바꾸어 놓았습니다만 이러한 사소한 외관상의 변화들 중 일부는 여전히 작년과 동일할 것입니다. 
+
+따라서, 이 과제에서 여러분은 이번 강의에서 배울 자신 만의 K-최근접 이웃 알고리즘(KNN, K-Nearest Neighbor classifier)을 구현할 것이며 SVM과 Softmax를 비롯하여 간단한 2층 신경망(Two-layer neural network)을 비롯한 몇 가지 선형 분류기도 구현할 것인데 다음 강의에서 이 모든 내용을 다룰 것입니다. 그리고 모든 과제는 Python과 NumPy를 사용합니다. 
+
+만약 Python 또는 NumPy에 익숙하지 않을 경우 코스 웹 사이트(http://cs231n.github.io/python-numpy-tutorial/)에서 찾을 수 있는 튜토리얼을 작성하며 학습하시고 이건 정말 중요한데 NumPy는 정말 효율적인 벡터화 연산을 통해서 여러분이 코드 몇 줄로 많은 계산을 수행할 수 있도록 도와줄 것이기 때문입니다. 따라서 수치 계산 및 기계 학습의 거의 모든 측면과 이러한 벡터화된 작업을 효율적으로 구현하는 것과 같이 모든 면에서 매우 중요합니다.
+
+그리고 첫 번째 과제에서 이것으로 많은 연습을 하게 될 것입니다. 따라서 Matlab이나 NumPy 또는 다른 유형의 벡터화된 텐서 계산에 대해 많은 경험이 없는 사람들은 과제를 일찍부터 살펴보고 튜토리얼을 주의 깊게 읽기를 권장합니다.
+
+3. 제가 이야기하고자 하는 또 다른 사항은 
+Google Cloud가 공식적으로 지원된다는 걸 알리게 되어 기쁩니다. Google Cloud는 Amazon AWS와 유사한데. 클라우드에서 가상 시스템을 시작할 수 있으며 이러한 가상 머신에서 GPU를 사용할 수 있습니다. Google Cloud를 사용하여 과제를 처리하는 방법에 대한 튜토리얼을 작성하고 있는데. 그러나 여기서는 단지 약간의 이미지를 다운로드할 수 있으며, 클라우드에서 이러한 인스턴스 중 하나에 대한 할당 작업을 매우 원활하게 수행할 수 있다는 것을 의미합니다.
+
+Google에서 매우 관대하게 이 수업을 지원했기 때문에 Google의 쿠폰 크레디트를 무료로 사용할 수 있도록 각 쿠폰을 배포 할 겁니다. 따라서 숙제 및 프로젝트에 자유롭게 사용할 수 있습니다.
+
+오늘 나중에 피아자에 자세한 내용을 게시할 것인데. 몇 가지 질문이 있어 이야기를 하자면 "개인 노트북을 사용할 수 있을까요?" "Corn에서 실행해야 합니까?" 등등 그래서 대답은 Google Cloud에서 실행할 수 있으며 이를 위해 우리가 쿠폰을 제공할 것이라는 것입니다. 쨋든 이것들이 내가 오늘 말하고 싶은 중요한 행정 문제들이며 그럼 이제  수업내용을 자세히 살펴보겠습니다.
+
+---
+## Image Classification pipeline
+컴퓨터 비전에서 핵심 과제인 이미지 분류 작업에 대해 조금 이야기를 나누었는데. 이것은 우리가 수업 과정 전반에 걸쳐 집중해야 하는 것이며 정확히는 "이 이미지 분류 작업을 어떻게 해야 할까?"인데, 좀 더 구체적으로 말하자면 이미지 분류를 할 때 시스템은 일부 입력 이미지를 수신하고 시스템은 미리 결정된(predeterminded) 범주(categories) 또는 레이블(labels)의 집합을 인식하기 때문에 개, 고양이, 트럭, 비행기와 같은 카테고리 레이블이 있을 수 있는데, 컴퓨터의 역할은 그림을 보고 고정된 카테고리 레이블(fixed categery label) 중 하나에 할당하는 것입니다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FbfOSod%2FbtquknG5dR9%2Foff8NYXT7TESx78pvFBWDK%2Fimg.jpg)
+
+이것은 매우 쉬운 문제처럼 보이는데, 사실 우리 두뇌에 있는 많은 시각 시스템이 이러한 일종의 시각적 인식 작업을 하기 위해 하드웨어적으로 내장되어(hardwired) 있기 때문에 그렇습니다. 하지만 사실 컴퓨터에겐 정말로 어려운 문제인데, 컴퓨터가 이미지를 볼 때 실제로 무엇을 보는지에 대해 생각해 보면, 컴퓨터는 우리가 고양이를 보았을 때처럼 고양이에 대한 전체적인 아이디어(holistic idea)을 얻지 못하기 때문입니다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdIGj6I%2FbtquvObCIXb%2FAnGrdLiBMcCk90UDCokoa1%2Fimg.png)
+
+실제로 컴퓨터는 이 거대한 수의 격자로 이미지를 표현하는데, 이미지는 마치 800 x 600 픽셀과 같을 수 있고 각 픽셀은 세 개의 숫자로 표현되며 그 픽셀에는 빨강, 녹색 및 파랑 값을 제공합니다. 따라서, 컴퓨터에게 이것은 단지 거대한 숫자 격자일 뿐이며 수천, 또는 아주 많은 수의 배열이지 고양이를 추출하는 것은 매우 어렵습니다.
+
+### Semantic Gap
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F4npT7%2Fbtquy1a6Pnl%2FmpgLgtJEclPcvoWAK36Yx1%2Fimg.jpg)
+
+그래서 우리는 이 문제를 의미적 차이(semantic gap)라고 부르는데. 고양이 또는 고양이의 레이블의 개념은 이 이미지에 지정하는 의미 레이블(semantic label)이며 고양이의 의미 개념(semantic idea)과 컴퓨터가 실제로 보고 있는 픽셀 값 사이에 큰 차이가 있다. 그리고 이것은 매우 어려운 문제인데 왜냐하면 우리는 이 픽셀 그리드가 완전히 바뀔 수 있는 아주 작고 미묘한 방법으로 그림을 변경할 수 있기 때문입니다.
+
+예를 들어, 결코 일어나지는 않겠지만 위와 같은 고양이를 가지고 이 고양이가 얌전히 앉아서 조금도 씰룩 이거나 근육을 움직이지 않는 상태로 우리가 카메라를 다른 쪽으로 이동시킨다면 모든 단일 그리드와 모든 단일 픽셀들 즉, 이 커다란 그리드 속의 숫자들은 완전히 달라질 것입니다. 그러나 어쨌든, 고양이는 여전히 같은 고양이라는 것이며 그리고 우리의 알고리즘은 이것에 견고(robust) 해야 합니다.
+
+### Challenges: Illumination
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fcmooec%2FbtquuJ4hIgk%2F9EvxkUhYVrNx1htjqWOK10%2Fimg.jpg)
+
+그러나 관점(viewpoint)만이 문제가 아닌데 또 다른 문제는 조명이다. 장면마다 다른 조건의 조명이 발생할 수 있으며 고양이가 매우 어둡거나 변덕스러운 장면에 등장하든, 매우 햇볕이 잘 드는 장면도 여전히 ​​고양이 이며 우리 알고리즘은 이 사실에 견고할 필요가 있다.
+
+## Release note
+2018-05-20 : First upload  
+2018-05-22 : Update  
+2018-05-26 : Update  
+2018-05-31 : Update & finished translation
+
+
+## References
+[CS231n]<https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PLC1qU-LWwrF64f4QKQT-Vg5Wr4qEE1Zxk>
